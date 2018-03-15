@@ -25,7 +25,7 @@ desktop-small:  950 px > width > 780px
 
 /*               desktop-large                */
 
-@media all (min-width: 1251px) {
+@media (min-width: 1251px) {
 
 /* default declarations */
 
@@ -1295,7 +1295,7 @@ body, html {
 
 /*               desktop-medium                */
 
-@media all (max-width: 1250px) and (min-width: 951px) {
+@media (max-width: 1250px) and (min-width: 951px) {
 
 /* default declarations */
 
@@ -2564,7 +2564,7 @@ desktop-small:  950 px > width > 780px
 
 /*               desktop-small                */
 
-@media all (max-width: 950px) and (min-width: 781px) {
+@media (max-width: 950px) and (min-width: 781px) {
 
 /* default declarations */
 
@@ -3836,7 +3836,7 @@ desktop-small:  950 px > width > 780px
 
 /*               desktop-small                */
 
-@media all (max-width: 780px) {
+@media (max-width: 780px) {
 
 /* default declarations */
 
