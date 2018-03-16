@@ -35,7 +35,7 @@
 
 		<! side nav thingy -->
 		<!--
-		<div class="m1 menu">
+		<div class="m1 menu" id="menu">
 				<div id="menu-center">
 						<ul>
 								<li><a class="active" href="#about">&#9679;</a>
@@ -49,7 +49,7 @@
 								</li>
 								<li><a href="#skills">&#9679;</a>
 
-								</li>
+
 
 							</li>
 							<li><a href="#tools">&#9679;</a>
@@ -59,6 +59,7 @@
 				</div>
 		</div>
 	-->
+
 
 <!------------MAIN CONTAINER----------->
 <div class="container">
@@ -183,7 +184,7 @@
 
 	<!-- EDUCATION --->
 
-	<div class="education">
+	<div id="education" class="education">
     <div class="education-top">
     <div class="education-title">
         <p class="education-title-item">Education</p>
@@ -887,6 +888,13 @@ function onScroll(event){
             currLink.removeClass("active");
         }
     });
+}
+
+
+function setHeight() {
+  var about = document.getElementById("about");
+  var menu = document.getElementById("menu");
+  menu.style.height = about.clientHeight;
 }
 
 

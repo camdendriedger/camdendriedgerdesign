@@ -5260,4 +5260,93 @@ a {
 */
 
 
+
+
+
+
+
+
+
+@charset "utf-8";
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    width: 40px;
+
+    padding-left: 10px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.light-menu {
+    width: 75px;
+    height: 100%;
+
+    position: fixed;
+    background-color:rgba(4, 180, 49, 0.6);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#menu-center {
+    width: 980px;
+    height: 75px;
+    margin: 0 auto;
+
+}
+#menu-center ul {
+    margin: 0px 0 0 0;
+    padding: 0;
+}
+#menu-center ul li {
+    list-style: none;
+    margin: 0 15px 0 0;
+    display: block;
+
+
+}
+.active {
+    font-family:'Droid Sans', serif;
+    font-size: 20px;
+    color: rgba(187, 187, 187, .8);
+    text-decoration: none;
+    line-height: 50px;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+li a {
+    font-family:'Droid Sans', serif;
+    font-size: 20px;
+    color: rgba(187, 187, 187, .2);
+    text-decoration: none;
+    line-height: 50px;
+}
+
+
+
 }
