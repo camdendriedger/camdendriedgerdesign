@@ -26,38 +26,40 @@
 
 
 
+<div class="nav">
+    <div id="nav-center">
+    <ul class=nav-list>
+        <li class="nav-list-item"><a href="#branding" id="brandinglink" class="nav-list-item-link">Branding</a></li>
+
+        <li class="nav-list-item"><a href="#print" class="nav-list-item-link">Print Design</a></li>
+
+        <li class="nav-list-item"><a href="#web" class="nav-list-item-link">Web Design</a></li>
+
+        <li class="nav-list-item"><a href="#shirt" class="nav-list-item-link">T-shirt Design</a></li>
+
+        <li class="nav-list-item"><a href="#photo" class="nav-list-item-link">Photography</a></li>
+
+        <li class="nav-list-item"><a href="#video" class="nav-list-item-link">Videography</a></li>
+
+
+    </ul>
+
+
+    </div>
+</div>
 
 
 
-
-			<div class="m1 menu">
-			    <div id="menu-center">
-			        <ul>
-			            <li><a class="active" href="#about">&#9679;</a>
-
-			            </li>
-			            <li><a href="#education">&#9679;</a>
-
-			            </li>
-			            <li><a href="#experience">&#9679;</a>
-
-			            </li>
-			            <li><a href="#skills">&#9679;</a>
-
-			            </li>
-
-								</li>
-								<li><a href="#tools">&#9679;</a>
-
-								</li>
-			        </ul>
-			    </div>
-			</div>
-			<div id="about"></div>
-			<div id="education"></div>
-			<div id="experience"></div>
-			<div id="skills"></div>
-			<div id="tools"></div>
+        
+        
+        
+			
+			<div id="branding"></div>
+			<div id="print"></div>
+			<div id="web"></div>
+			<div id="shirt"></div>
+			<div id="photo"></div>
+            <div id="video"></div>
 
 
 
@@ -91,11 +93,11 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('#menu-center a').each(function () {
+    $('#nav-center a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center ul li a').removeClass("active");
+            $('#nav-center ul li a').removeClass("active");
             currLink.addClass("active");
         }
         else{

@@ -148,6 +148,8 @@ body, html, container {
         font-size: .6em;
     }
 
+
+
     #image-2-1 {
         width: 80%;
     }
@@ -189,7 +191,7 @@ body, html, container {
     /* positioning */
     position: fixed;
     top: 0px;
-    z-index: 2;
+    z-index: 100;
 
     /* background */
     background-color: #333;
@@ -486,13 +488,22 @@ body, html, container {
     font-family: 'Teko', 'open sans';
     font-size: 3em;
     font-weight: 100;
-    border-top: 1px solid #afcfdb;
-    border-bottom: 1px solid #afcfdb;
-    color: #fff;
+    border-top: 2px solid #afcfdb;
+    border-bottom: 2px solid #afcfdb;
+    color: #333;
     width: 100%;
     height: 70%;
     margin: 0;
-    line-height: 1;
+    padding-top: 7px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     /*
     border: 1px solid #333;
     */
@@ -500,14 +511,18 @@ body, html, container {
 }
 
 .title-container {
-  width: 100%;
+  width: 80%;
   height: 70px;
   /*
   margin-top: 20px;
   margin-bottom: 20px;
   */
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+  /*
   background-color: #333;
+  */
 
   display: -webkit-box;
   display: -moz-box;
@@ -537,6 +552,7 @@ body, html, container {
     flex-direction: row;
 
     /* background */
+
 
     /* content */
 
@@ -678,67 +694,188 @@ background-color: rgba(50,50,50, .8);
 
 
 #logo1 {
-    background-image: url(../img/branding/1.gif);
+    background-image: url(../img/branding/small/1.gif);
 }
 
 #logo2 {
-    background-image: url(../img/branding/2.png);
+    background-image: url(../img/branding/small/2.svg);
 }
 
 #logo3 {
-    background-image: url(../img/branding/3.png);
+    background-image: url(../img/branding/small/3.svg);
 }
 
 #logo4 {
-    background-image: url(../img/branding/4.png);
+    background-image: url(../img/branding/small/4.svg);
 }
 
 #logo5 {
-    background-image: url(../img/branding/5.png);
+    background-image: url(../img/branding/small/5.svg);
+    background-position: -15px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #logo6 {
-    background-image: url(../img/branding/6.gif);
+    background-image: url(../img/branding/small/6.svg);
+    border: 2px solid #ccc;
 }
 
 #logo7 {
-    background-image: url(../img/branding/8.gif);
+    background-image: url(../img/branding/small/7.svg);
+    border: 2px solid #ccc;
 }
 
 #logo8 {
-    background-image: url(../img/branding/7.gif);
+    background-image: url(../img/branding/small/8.png);
+    border: 2px solid #ccc;
 }
 
 #logo9 {
-    background-image: url(../img/branding/9.gif);
+    background-image: url(../img/branding/small/9.svg);
 }
+
+#logo10 {
+    background-image: url(../img/branding/small/10.jpg);
+}
+
 
 
 
 /* -------PRINT DESIGN-------- */
 
 #print1 {
-    background-image: url(../img/print/1.png);
+    background-image: url(../img/print/small/1.jpg);
     background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #print2 {
-    background-image: url(../img/print/2.gif);
-    background-position: -95px 0;
+    background-image: url(../img/print/small/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #print3 {
-    background-image: url(../img/print/3.gif);
+    background-image: url(../img/print/small/3.png);
     background-position: 0px -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #print4 {
-    background-image: url(../img/print/4.png);
+    background-image: url(../img/print/small/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #print5 {
-    background-image: url(../img/print/5.png);
+    background-image: url(../img/print/small/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#print6 {
+    background-image: url(../img/print/small/6.png);
+    background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#print7 {
+    background-image: url(../img/print/small/10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#print8 {
+    background-image: url(../img/print/small/9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#print9 {
+    background-image: url(../img/print/small/11.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: cover;
+}
+
+#print10 {
+    background-image: url(../img/print/small/7.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    background-size: cover;
+}
+
+#print11 {
+    background-image: url(../img/print/small/12.png);
+    background-repeat: no-repeat;
+    background-position: 0 -30px;
+    background-size: cover;
+}
+
+#print12 {
+    background-image: url(../img/print/small/13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+#web1js {
+  width: 100%;
+}
+
+#web1 {
+  background-image: url("../img/web/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+#shirt1 {
+  background-image: url("../img/shirt/small/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#shirt2 {
+  background-image: url("../img/shirt/small/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#shirt3 {
+  background-image: url("../img/shirt/small/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#shirt4 {
+  background-image: url("../img/shirt/small/4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 
 
 

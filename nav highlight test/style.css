@@ -8,7 +8,7 @@ body, html {
     height: 100%;
     width: 100%;
 }
-.menu {
+.nav {
     width: 75px;
     height: 100%;
     padding-left: 10px;
@@ -39,17 +39,21 @@ body, html {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-#menu-center {
+
+/*
+#nav-center {
     width: 980px;
     height: 75px;
     margin: 0 auto;
 
 }
-#menu-center ul {
+*/
+
+#nav-center ul {
     margin: 0px 0 0 0;
     padding: 0;
 }
-#menu-center ul li {
+#nav-center ul li {
     list-style: none;
     margin: 0 30px 0 0;
     display: block;
@@ -61,38 +65,44 @@ body, html {
     text-decoration: none;
     line-height: 50px;
 }
-a {
+li a {
     font-family:'Droid Sans', serif;
     font-size: 30px;
     color: #bbb;
     text-decoration: none;
     line-height: 50px;
 }
-#about {
-    background-color: grey;
+#branding {
+    
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: url(images/home-bg2.png);
-}
-#education {
-    background-image: url(images/portfolio-bg.png);
-    height: 100%;
-    width: 100%;
-}
-#experience {
     background-color: blue;
+}
+#print {
+    background-color: aqua;
     height: 100%;
     width: 100%;
 }
-#skills {
+#web {
     background-color: red;
+    height: 100%;
+    width: 100%;
+}
+#shirt {
+    background-color: firebrick;
     height: 100%;
     width: 100%;
 }
 
-#tools {
-    background-color: red;
+#photo {
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+}
+
+#video {
+    background-color: bisque;
     height: 100%;
     width: 100%;
 }
