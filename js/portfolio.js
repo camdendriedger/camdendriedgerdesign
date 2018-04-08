@@ -3,7 +3,8 @@
 
 
 
-        
+
+
 
 
    // Add smooth scrolling to all links
@@ -236,6 +237,315 @@
         $('#close-button-2-5').click(function() {
     $('#wrapper-2-5').toggle();
 });
+
+
+
+
+//print 6
+
+
+        $('#print6js').click(function() {
+    $('#wrapper-2-6').toggle();
+});
+
+        $('#close-button-2-6').click(function() {
+    $('#wrapper-2-6').toggle();
+});
+
+
+
+
+
+//print 7
+
+
+        $('#print7js').click(function() {
+    $('#wrapper-2-7').toggle();
+});
+
+        $('#close-button-2-7').click(function() {
+    $('#wrapper-2-7').toggle();
+});
+
+
+
+
+
+//print 8
+
+
+        $('#print8js').click(function() {
+    $('#wrapper-2-8').toggle();
+});
+
+        $('#close-button-2-8').click(function() {
+    $('#wrapper-2-8').toggle();
+});
+
+
+
+
+//print 9
+
+
+        $('#print9js').click(function() {
+    $('#wrapper-2-9').toggle();
+});
+
+        $('#close-button-2-9').click(function() {
+    $('#wrapper-2-9').toggle();
+});
+
+
+
+//print 10
+
+
+        $('#print10js').click(function() {
+    $('#wrapper-2-10').toggle();
+});
+
+        $('#close-button-2-10').click(function() {
+    $('#wrapper-2-10').toggle();
+});
+
+
+
+//print 11
+
+
+        $('#print11js').click(function() {
+    $('#wrapper-2-11').toggle();
+});
+
+        $('#close-button-2-11').click(function() {
+    $('#wrapper-2-11').toggle();
+});
+
+
+
+
+//print 12
+
+
+        $('#print12js').click(function() {
+    $('#wrapper-2-12').toggle();
+});
+
+        $('#close-button-2-12').click(function() {
+    $('#wrapper-2-12').toggle();
+});
+
+
+
+//print 13
+
+
+        $('#print13js').click(function() {
+    $('#wrapper-2-13').toggle();
+});
+
+        $('#close-button-2-13').click(function() {
+    $('#wrapper-2-13').toggle();
+});
+
+
+
+
+//print 14
+
+
+        $('#print14js').click(function() {
+    $('#wrapper-2-14').toggle();
+});
+
+        $('#close-button-2-14').click(function() {
+    $('#wrapper-2-14').toggle();
+});
+
+
+
+
+
+
+
+//shirt
+
+
+
+
+
+
+//shirt 1
+
+
+        $('#shirt1js').click(function() {
+    $('#wrapper-3-1').toggle();
+});
+
+        $('#close-button-3-1').click(function() {
+    $('#wrapper-3-1').toggle();
+});
+
+
+
+//shirt 2
+
+
+        $('#shirt2js').click(function() {
+    $('#wrapper-3-2').toggle();
+});
+
+        $('#close-button-3-2').click(function() {
+    $('#wrapper-3-2').toggle();
+});
+
+
+
+//shirt 3
+
+
+        $('#shirt3js').click(function() {
+    $('#wrapper-3-3').toggle();
+});
+
+        $('#close-button-3-3').click(function() {
+    $('#wrapper-3-3').toggle();
+});
+
+
+
+//shirt 4
+
+
+        $('#shirt4js').click(function() {
+    $('#wrapper-3-4').toggle();
+});
+
+        $('#close-button-3-4').click(function() {
+    $('#wrapper-3-4').toggle();
+});
+
+
+
+
+
+
+//photo
+
+
+
+
+
+
+//photo 1
+
+
+        $('#photo1js').click(function() {
+    $('#wrapper-5-1').toggle();
+});
+
+        $('#close-button-5-1').click(function() {
+    $('#wrapper-5-1').toggle();
+});
+
+
+//photo 2
+
+
+        $('#photo2js').click(function() {
+    $('#wrapper-5-2').toggle();
+});
+
+        $('#close-button-5-2').click(function() {
+    $('#wrapper-5-2').toggle();
+});
+
+
+//photo 3
+
+
+        $('#photo3js').click(function() {
+    $('#wrapper-5-3').toggle();
+});
+
+        $('#close-button-5-3').click(function() {
+    $('#wrapper-5-3').toggle();
+});
+
+
+//photo 4
+
+
+        $('#photo4js').click(function() {
+    $('#wrapper-5-4').toggle();
+});
+
+        $('#close-button-5-4').click(function() {
+    $('#wrapper-5-4').toggle();
+});
+
+
+//photo 5
+
+
+        $('#photo5js').click(function() {
+    $('#wrapper-5-5').toggle();
+});
+
+        $('#close-button-5-5').click(function() {
+    $('#wrapper-5-5').toggle();
+});
+
+
+//photo 2
+
+
+        $('#photo6js').click(function() {
+    $('#wrapper-5-6').toggle();
+});
+
+        $('#close-button-5-6').click(function() {
+    $('#wrapper-5-6').toggle();
+});
+
+
+//photo 7
+
+
+        $('#photo7js').click(function() {
+    $('#wrapper-5-7').toggle();
+});
+
+        $('#close-button-5-7').click(function() {
+    $('#wrapper-5-7').toggle();
+});
+
+
+//photo 8
+
+
+        $('#photo8js').click(function() {
+    $('#wrapper-5-8').toggle();
+});
+
+        $('#close-button-5-8').click(function() {
+    $('#wrapper-5-8').toggle();
+});
+
+
+//photo 9
+
+
+        $('#photo9js').click(function() {
+    $('#wrapper-5-9').toggle();
+});
+
+        $('#close-button-5-9').click(function() {
+    $('#wrapper-5-9').toggle();
+});
+
+
 
 
 

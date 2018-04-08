@@ -17,6 +17,79 @@ desktop-small:  950 px > width > 780px
 /* -------------- Media Query --------------- */
 
 
+.header-link {
+  text-decoration: none;
+  color: #fff;
+  z-index: 5;
+  display: block;
+  font-size: 14px;
+}
+
+.header-title {
+  margin-right: 5px;
+}
+
+.menu-link {
+
+}
+
+.active {
+  color: #ccc;
+}
+
+
+.skills-expertise-list-item {
+  color: #333;
+  margin: 0;
+}
+
+.skills-expertise-background-2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+
+  z-index: 2;
+  opacity: 0;
+
+  transition: 1s ease;
+}
+
+li#list-item-branding:hover img.skills-expertise-background-2 {
+  opacity: 1;
+}
+
+li#list-item-photo:hover img.skills-expertise-background-2 {
+  opacity: 1;
+}
+
+li#list-item-print:hover img.skills-expertise-background-2 {
+  opacity: 1;
+}
+
+li#list-item-shirt:hover img.skills-expertise-background-2 {
+  opacity: 1;
+}
+
+li#list-item-web:hover img.skills-expertise-background-2 {
+  opacity: 1;
+}
+
+li#list-item-video:hover img.skills-expertise-background-2 {
+  opacity: 1;
+}
+
+
+
+.job-link {
+  text-decoration: none;
+  color: #333;
+  transition: .2s ease;
+}
+
+.job-link:hover {
+  color: #AFCFDB;
+}
+
 
 
 
@@ -755,7 +828,7 @@ body, html {
 
 .skills-expertise {
     width: 66%;
-    margin-right: 20px;
+
 }
 
 .skills-main  {
@@ -784,8 +857,17 @@ body, html {
 }
 
 .skills-bottom-bottom {
-    display: flex;
-    flex-direction: row;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 423px;
+  margin-bottom: 20px;
 }
 
 .skills-expertise-title {
@@ -844,7 +926,7 @@ body, html {
 .skills-expertise-list {
     list-style: none;
     padding: 0;
-    width: 50%;
+    width: 100%;
 
 
     display: -webkit-box;
@@ -872,20 +954,21 @@ body, html {
     text-align: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
 
 }
 
 .skills-expertise-background {
   width: 80px;
   height: 80px;
+  position: absolute;
 
   z-index: 1;
 }
 
 .skills-expertise-skill {
-  width: 50%;
+  width: 100%;
   height: 30px;
   margin-top: 25px;
   position: absolute;
@@ -1084,6 +1167,8 @@ body, html {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    margin-bottom: 20px;
 }
 
 .tools-main-subtitle {
@@ -2024,8 +2109,18 @@ body, html {
 
 
 .skills-expertise {
-    width: 66%;
-    margin-right: 20px;
+    width: 33%;
+
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .skills-main  {
@@ -2038,7 +2133,7 @@ body, html {
   border-top: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
   line-height: .1;
 
 
@@ -2054,8 +2149,16 @@ body, html {
 }
 
 .skills-bottom-bottom {
-    display: flex;
-    flex-direction: row;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .skills-expertise-title {
@@ -2086,7 +2189,7 @@ body, html {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -2124,12 +2227,22 @@ body, html {
     display: flex;
     flex-direction: row;
     max-width: 400px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .skills-expertise-list {
     list-style: none;
     padding: 0;
-    width: 50%;
+    width: 100%;
 
 
     display: -webkit-box;
@@ -2170,7 +2283,7 @@ body, html {
 }
 
 .skills-expertise-skill {
-  width: 50%;
+  width: 100%;
   height: 30px;
   margin-top: 25px;
   position: absolute;
@@ -2353,6 +2466,8 @@ body, html {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    margin-bottom: 40px;
 }
 
 .tools-main-subtitle {
@@ -3293,7 +3408,7 @@ body, html {
 
 .skills-expertise {
     width: 100%;
-    margin-right: 20px;
+
 }
 
 .skills-main  {
@@ -3303,10 +3418,10 @@ body, html {
 .skills-main-subtitle {
   font-family: 'Montserrat';
   color: #333;
-  border-top: 1px solid #bbb;
+
   border-bottom: 1px solid #bbb;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  margin-bottom: -10px;
   line-height: .1;
 
 
@@ -3322,8 +3437,17 @@ body, html {
 }
 
 .skills-bottom-bottom {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 25px;
 }
 
 .skills-expertise-title {
@@ -3370,19 +3494,18 @@ body, html {
     column-gap: 20px;
     */
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     margin-right: 0;
     position: relative;
     display: flex;
     flex-direction: row;
-    max-width: 400px;
+
 }
 
 .skills-expertise-list {
     list-style: none;
     padding: 0;
-    width: 50%;
+    width: 100%;
 
 
     display: -webkit-box;
@@ -3390,7 +3513,7 @@ body, html {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     justify-content: center;
     font-family: 'Montserrat';
@@ -3476,8 +3599,7 @@ body, html {
     column-gap: 20px;
     */
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     position: relative;
     display: flex;
     flex-direction: row;
@@ -3500,21 +3622,21 @@ body, html {
 }
 
 .skills-assets-list {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    font-family: 'Montserrat';
-    font=size: 15px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font=size: 15px;
 
 
 }
@@ -3533,8 +3655,7 @@ body, html {
     text-align: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
 
 }
 
@@ -3572,6 +3693,7 @@ body, html {
 
 .tools {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 
@@ -3626,9 +3748,9 @@ body, html {
 .tools-main-subtitle {
   font-family: 'Montserrat';
   color: #333;
-  border-top: 1px solid #bbb;
+
   border-bottom: 1px solid #bbb;
-  margin-top: 20px;
+
   margin-bottom: 20px;
   line-height: .1;
   width: 100%;
@@ -4374,8 +4496,10 @@ body, html {
     padding: 0;
     margin: 0;
     margin-bottom: -25px;
-    margin-top: 20px;
+    margin-top: 10px;
+    /*
     border-top: 1px solid #333;
+    */
 }
 
 
@@ -4527,8 +4651,10 @@ body, html {
     padding: 0;
     margin: 0;
     margin-bottom: -25px;
-    margin-top: 20px;
+    margin-top: 10px;
+    /*
     border-top: 1px solid #333;
+    */
 }
 
 
@@ -4633,37 +4759,43 @@ body, html {
 }
 
 .skills-top {
-    height: 65px;
-    width: 100%;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid #afcfdb;
-    padding-bottom: 10px;
+  height: 65px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #afcfdb;
+  padding-bottom: 10px;
 }
 
 
 .skills-title {
-    height: 100%;
-    margin-right: 20px;
+  height: 100%;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .skills-title-item {
-    height: 100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  height: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -4677,7 +4809,8 @@ body, html {
 
 
 .skills-expertise {
-    width: 90%;
+    width: 100%;
+
 }
 
 .skills-main  {
@@ -4687,9 +4820,9 @@ body, html {
 .skills-main-subtitle {
   font-family: 'Montserrat';
   color: #333;
-  border-top: 1px solid #bbb;
+
   border-bottom: 1px solid #bbb;
-  margin-top: 15px;
+
   margin-bottom: 20px;
   line-height: .1;
 
@@ -4706,26 +4839,18 @@ body, html {
 }
 
 .skills-bottom-bottom {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .skills-expertise-title {
     margin-top: 10px;
-    font-family: 'Montserrat';
-    font-size: 20px;
+    font-family: 'Teko';
+    font-size: 35px;
     height: 50px;
     border-bottom: 1px solid #333;
     border-top: 1px solid #333;
-    margin-right: 10px;
-    margin-left: 10px;
 
     display: -webkit-box;
     display: -moz-box;
@@ -4733,9 +4858,9 @@ body, html {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .skills-expertise-list-container-container {
@@ -4763,19 +4888,18 @@ body, html {
     column-gap: 20px;
     */
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     margin-right: 0;
     position: relative;
     display: flex;
     flex-direction: row;
-    max-width: 400px;
+
 }
 
 .skills-expertise-list {
     list-style: none;
     padding: 0;
-    width: 50%;
+    width: 100%;
 
 
     display: -webkit-box;
@@ -4783,7 +4907,7 @@ body, html {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     justify-content: center;
     font-family: 'Montserrat';
@@ -4836,14 +4960,14 @@ body, html {
 
 
 .skills-assets {
-  width: 90%;
+  width: 100%;
 }
 
 .skills-assets-title {
-    width: 100%;
+  width: 100%;
     margin-top: 10px;
-    font-family: 'Montserrat';
-    font-size: 20px;
+    font-family: 'Teko';
+    font-size: 35px;
     height: 50px;
     border-bottom: 1px solid #333;
     border-top: 1px solid #333;
@@ -4854,9 +4978,26 @@ body, html {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+}
+
+.skills-assets-list-container {
+    /*
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    */
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .skills-assets-list-container-container {
@@ -4874,41 +5015,22 @@ body, html {
   text-align: center;
 }
 
-.skills-assets-list-container {
-    /*
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
-    column-count: 2;
-    column-gap: 20px;
-    */
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-
-}
-
 .skills-assets-list {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    font-family: 'Montserrat';
-    font=size: 15px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font=size: 15px;
 
 
 }
@@ -4927,8 +5049,7 @@ body, html {
     text-align: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
 
 }
 
@@ -4966,41 +5087,47 @@ body, html {
 
 .tools {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 
 .tools-top {
-    height: 65px;
-    width: 100%;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid #afcfdb;
-    padding-bottom: 10px;
+  height: 65px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #afcfdb;
+  padding-bottom: 10px;
 }
 
 .tools-title {
-    height: 100%;
-    margin-right: 20px;
-    color: #333;
+  height: 100%;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .tools-title-item {
-    height: 100%;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  height: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .tools-logo {
@@ -5029,10 +5156,9 @@ body, html {
 .tools-main-subtitle {
   font-family: 'Montserrat';
   color: #333;
-  font-size: 15px;
-  border-top: 1px solid #bbb;
+
   border-bottom: 1px solid #bbb;
-  margin-top: 20px;
+
   margin-bottom: 20px;
   line-height: .1;
   width: 100%;
@@ -5259,6 +5385,7 @@ a {
     line-height: 50px;
 }
 */
+
 
 
 
