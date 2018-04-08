@@ -302,6 +302,7 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
+    clip-path: circle(50% at center);
 }
 
 .sidebar-about-image-item {
@@ -1585,6 +1586,7 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
+    clip-path: circle(50% at center);
 }
 
 .sidebar-about-image-item {
@@ -2884,6 +2886,7 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
+    clip-path: circle(50% at center);
 }
 
 .sidebar-about-image-item {
@@ -4163,6 +4166,7 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
+    clip-path: circle(50% at center);
 }
 
 .sidebar-about-image-item {
