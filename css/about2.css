@@ -8,13 +8,13 @@ desktop-medium:  1250px > width > 950px
 
 desktop-small:  950 px > width > 780px
 
-*.
+*/
 
 
 
 
 
-/* -------------- Media Query --------------- */
+
 
 
 .header-link {
@@ -3963,7 +3963,7 @@ desktop-small:  950 px > width > 780px
 
 
 
-/*               desktop-small                */
+/*               phone               */
 
 @media (max-width: 780px) {
 
@@ -3987,6 +3987,10 @@ body, html {
 
 
 /* -------HEADER-------- */
+	
+#menu-link-2 {
+	display: none;
+}
 
 .header {
 

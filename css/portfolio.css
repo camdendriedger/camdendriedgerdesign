@@ -4385,6 +4385,10 @@ width: 100%;
     justify-content: left;
 
   }
+	
+	#menu-link-2 {
+		display: none;
+	}
 
 
   .header-logo {
@@ -4927,6 +4931,10 @@ width: 100%;
     justify-content: left;
 
   }
+	
+	#menu-link-2 {
+		display: none;
+	}
 
 
   .header-logo {
