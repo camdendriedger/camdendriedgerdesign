@@ -90,6 +90,42 @@ li#list-item-video:hover img.skills-expertise-background-2 {
   color: #AFCFDB;
 }
 
+#sidebar-contact-image-instagram {
+	background-image: url("../img/about/sidebar/contact/instagram.svg");
+	background-size: contain;
+}
+
+#sidebar-contact-image-item-instagram {
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+a#sidebar-contact-item-instagram-link:hover img#sidebar-contact-image-item-instagram {
+	opacity: 1;
+}
+
+
+#sidebar-contact-image-website {
+	background-image: url("../img/about/sidebar/contact/website.svg");
+	background-size: contain;
+}
+
+#sidebar-contact-image-item-website {
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+a#sidebar-contact-item-website-link:hover img#sidebar-contact-image-item-website {
+	opacity: 1;
+}
+
+
+
+.sidebar-contact-item-link {
+	text-decoration: none;
+	color: #333;
+}
+
 
 
 
@@ -271,7 +307,7 @@ body, html {
     width: 30%;
     min-width: 350px;
     display: flex;
-    top: 40px;
+    top: 20px;
     padding: 40px;
     background-color: #e4ebed;
     color: #333;
@@ -525,6 +561,10 @@ body, html {
 .sidebar-portfolio-image {
   height: 100%;
 
+}
+	
+	.sidebar-portfolio-button-2 {
+	display: none;
 }
 
 
@@ -1556,7 +1596,7 @@ body, html {
     width: 30%;
     min-width: 350px;
     display: flex;
-    top: 40px;
+    top: 20px;
     padding: 40px;
     background-color: #e4ebed;
     color: #333;
@@ -1809,6 +1849,10 @@ body, html {
 .sidebar-portfolio-image {
   height: 100%;
 
+}
+	
+.sidebar-portfolio-button-2 {
+	display: none;
 }
 
 
@@ -2857,7 +2901,7 @@ body, html {
     width: 30%;
 
     display: flex;
-    top: 40px;
+    top: 20px;
     padding: 20px;
     background-color: #e4ebed;
     color: #333;
@@ -3109,6 +3153,10 @@ body, html {
 .sidebar-portfolio-image {
   height: 100%;
 
+}
+	
+.sidebar-portfolio-button-2 {
+	display: none;
 }
 
 
@@ -4142,7 +4190,7 @@ body, html {
     width: 100%;
 
     display: flex;
-    top: 40px;
+    top: 20px;
     padding: 20px;
     background-color: #e4ebed;
     color: #333;
@@ -4290,10 +4338,13 @@ body, html {
 }
 
 .sidebar-contact {
-
+	
+		
     height: 0px;
     display: none;
 
+	
+	
 }
 
 .sidebar-contact-item {
@@ -4354,6 +4405,7 @@ body, html {
   width: 100%;
   margin-bottom: 30px;
   margin-top: 15px;
+	
   font-family: 'Montserrat';
   font-size: 15px;
   display: -webkit-box;
@@ -4367,7 +4419,7 @@ body, html {
 }
 
 .sidebar-portfolio-button {
-  width: 100%;
+  margin-right: 5px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4379,7 +4431,7 @@ body, html {
 }
 
 .sidebar-portfolio-button-link {
-  color: #697577;
+  color: #333;
   background-color: #fff;
   width: 160px;
   height: 40px;
@@ -4416,6 +4468,55 @@ body, html {
   height: 100%;
 
 }
+	
+.sidebar-portfolio-button-2 {
+	
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+	margin-left: 5px;
+}
+	
+	.sidebar-portfolio-button-2-link {
+  color: #333;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: .5s ease;
+  text-decoration: none;
+  z-index: 1;
+  cursor: default;
+
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+	
+.sidebar-portfolio-image-item-instagram {
+	height: 70%;
+	width: 70%;
+}
+	
+.sidebar-portfolio-button-2-link:hover {
+  background-color: #97a9ad;
+  color: #fff;
+
+  -webkit-box-shadow:0 0 10px #bbb;
+  -moz-box-shadow: 0 0 10px #bbb;
+  box-shadow:0 0 5px #bbb;
+}
+	
+
 
 
 
