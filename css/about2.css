@@ -4190,7 +4190,7 @@ body, html {
     width: 100%;
 
     display: flex;
-    top: 20px;
+    top: 40px;
     padding: 20px;
     background-color: #e4ebed;
     color: #333;
@@ -4480,9 +4480,12 @@ body, html {
   justify-content: center;
   text-align: center;
 	margin-left: 5px;
+	
+	height: 40px;
+	width: 40px;
 }
 	
-	.sidebar-portfolio-button-2-link {
+.sidebar-portfolio-button-2-link {
   color: #333;
   background-color: #fff;
   width: 40px;
@@ -4492,6 +4495,8 @@ body, html {
   text-decoration: none;
   z-index: 1;
   cursor: default;
+	
+
 
   display: -moz-box;
   display: -ms-flexbox;
@@ -4502,9 +4507,25 @@ body, html {
   text-align: center;
 }
 	
-.sidebar-portfolio-image-item-instagram {
-	height: 70%;
-	width: 70%;
+#sidebar-portfolio-image-item-instagram {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+}
+	
+	#sidebar-portfolio-image-item-instagram-2 {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	opacity: 0;
+	transition: all .5s ease;
+}
+	
+.sidebar-portfolio-button-2-link:hover #sidebar-portfolio-image-item-instagram-2{
+  height: 40px;
+	width: 40px;
+	position: absolute;
+	opacity: 1;
 }
 	
 .sidebar-portfolio-button-2-link:hover {
