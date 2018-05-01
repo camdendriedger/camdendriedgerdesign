@@ -431,6 +431,9 @@ body, html {
     border-bottom: 1px solid #333;
     margin-top: 60px;
     padding-top: 0px;
+	
+	position: sticky;
+	top: 80px;
 
     display: -webkit-box;
     display: -moz-box;
@@ -510,6 +513,10 @@ body, html {
   align-items: center;
   justify-content: center;
   text-align: center;
+	
+	position: sticky;
+	position: -webkit-sticky;
+	top: 500px;
 }
 
 .sidebar-portfolio-button {
@@ -1728,6 +1735,10 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+	
+	position: sticky;
+	position: -webkit-sticky;
+	top: 80px;
 }
 
 .sidebar-contact-item {
@@ -1798,6 +1809,10 @@ body, html {
   align-items: center;
   justify-content: center;
   text-align: center;
+	
+	position: sticky;
+	position: -webkit-sticky;
+	top: 500px;
 }
 
 .sidebar-portfolio-button {
@@ -2928,6 +2943,8 @@ body, html {
     justify-content: center;
 
     font-family: 'Teko';
+	
+	
 }
 
 .sidebar-about-image {
@@ -3033,6 +3050,10 @@ body, html {
     flex-direction: column;
     align-items: baseline;
     justify-content: left;
+	
+	position: sticky;
+	position: -webkit-sticky;
+	top: 40px;
 }
 
 .sidebar-contact-item {
@@ -3102,6 +3123,10 @@ body, html {
   align-items: center;
   justify-content: center;
   text-align: center;
+	
+	position: sticky;
+	position: -webkit-sticky;
+	top: 90%;
 }
 
 .sidebar-portfolio-button {
