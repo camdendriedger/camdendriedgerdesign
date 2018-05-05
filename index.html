@@ -1,5 +1,6 @@
 <!doctype html>
 
+
 <html>
 
 
@@ -70,3 +71,86 @@
 </svg>
 -->
 
+
+
+
+        <div class="title-container">
+        <p class="content-title">Camden Driedger</p>
+        </div>
+        <div class="subtitle-container">
+        <p class="content-subtitle">Graphic Designer / Photographer</p>
+        </div>
+        <div class="button-container">
+            <a href="about2.html" class="content-button">About</a>
+        <a href="portfolio.html" class="content-button">View My Work</a>
+            <a href="mailto:camden@driedger.design?subject=Contact Me&body=Alternatively, you can contact me at (519) 990-0360 for any inquiries" class="content-button">Contact Me</a>
+
+
+        </div>
+    </div>
+
+ 
+<div class="backdrop-container">
+<div class="backdrop">
+</div>
+
+</div>
+        </div>
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+   $("a.arrow-link").click(function(event) {
+  event.preventDefault();
+  $(".slider").fadeOut(500, redirectPage.bind(this, this.href));
+});
+function redirectPage('#main') {
+  $(".slider").fadeIn(500);
+  setTimeout(function () {
+    window.location = '#main';
+  }, 0);
+}
+$(window).scroll(function(){
+    $(".slider").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
