@@ -308,7 +308,6 @@ body, html {
     min-width: 350px;
     display: flex;
     top: 20px;
-		margin-bottom: -20px;
     padding: 40px;
     background-color: #e4ebed;
     color: #333;
@@ -1606,7 +1605,6 @@ body, html {
     display: flex;
     top: 20px;
     padding: 40px;
-		margin-bottom: -20px;
     background-color: #e4ebed;
     color: #333;
     z-index: 4;
