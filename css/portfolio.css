@@ -54,7 +54,9 @@ container {
 
 
 
-
+#photo-grid-link {
+	width: 100%; !important
+}
 
 
 
@@ -1294,10 +1296,11 @@ width: 100%;
 
 
   #photo1 {
-    background-image: url("../img/photo/3.jpg");
+    background-image: url("../img/photo/10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+		width: 100%;
   }
 
   #photo2 {
@@ -2240,10 +2243,11 @@ width: 100%;
 
 
   #photo1 {
-    background-image: url("../img/photo/3.jpg");
+    background-image: url("../img/photo/10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+		width: 100%;
   }
 
   #photo2 {
@@ -3188,10 +3192,11 @@ width: 100%;
 
 
   #photo1 {
-    background-image: url("../img/photo/3.jpg");
+    background-image: url("../img/photo/10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+		width: 100%;
   }
 
   #photo2 {
@@ -4137,10 +4142,11 @@ width: 100%;
 
 
   #photo1 {
-    background-image: url("../img/photo/3.jpg");
+    background-image: url("../img/photo/10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+		width: 100%;
   }
 
   #photo2 {
@@ -5137,10 +5143,11 @@ width: 100%;
 
 
   #photo1 {
-    background-image: url("../img/photo/3.jpg");
+    background-image: url("../img/photo/10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+		width: 100%;
   }
 
   #photo2 {
@@ -6692,10 +6699,11 @@ width: 100%;
 
 
   #photo1 {
-    background-image: url("../img/photo/3.jpg");
+    background-image: url("../img/photo/10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+		width: 100%;
   }
 
   #photo2 {
