@@ -85,11 +85,15 @@
         </div>
         <div class="button-container">
             <a href="about2.html" class="content-button">About</a>
-        <a href="portfolio.html" class="content-button">View My Work</a>
-            <a href="mailto:camden@driedger.design?subject=Contact Me&body=Alternatively, you can contact me at (519) 990-0360 for any inquiries" class="content-button">Contact Me</a>
-
-
+					
+        		<a href="portfolio.html" class="content-button">View My Work</a>
+					
+          	<a href="mailto:camden@driedger.design?subject=Contact Me&body=Alternatively, you can contact me at (519) 990-0360 for any inquiries" class="content-button">Contact Me</a>
+					
+						
         </div>
+			
+				
     </div>
 
  
@@ -122,6 +126,10 @@
 
 
 <script>
+	
+	
+	
+	
    $("a.arrow-link").click(function(event) {
   event.preventDefault();
   $(".slider").fadeOut(500, redirectPage.bind(this, this.href));
@@ -135,6 +143,28 @@ function redirectPage('#main') {
 $(window).scroll(function(){
     $(".slider").css("opacity", 1 - $(window).scrollTop() / 250);
   });
+	
+	
+	
+	//navigation bar highlighter 
+	
+	function onScroll(event) {
+				var scrollPos = $(document).scrollTop();
+				$('#nav-center a').each(function() {
+					var currLink = $(this);
+					var refElement = $(currLink.attr("href"));
+					if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+						$('#nav-center ul li a').removeClass("active");
+						currLink.addClass("active");
+					} else {
+						currLink.removeClass("active");
+					}
+				});
+			}
+	
+	
+	
+	
 </script>
 
 

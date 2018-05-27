@@ -126,7 +126,12 @@ a#sidebar-contact-item-website-link:hover img#sidebar-contact-image-item-website
 	color: #333;
 }
 
-
+.profile-fill {
+	position: absolute;
+	width: 100%;
+	height: 110px;
+	background-color: #e4ebed;
+}
 
 
 
@@ -340,11 +345,16 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
-    clip-path: circle(50% at center);
+    
+	
+	background-color: #e4ebed;
 }
 
 .sidebar-about-image-item {
     width: 100%;
+	clip-path: circle(50% at center);
+	
+	background-color: #e4ebed;
 
 }
 
@@ -364,6 +374,7 @@ body, html {
 
 .sidebar-about-header-image {
     height: 100%;
+		background-color: #e4ebed;
 
     display: -webkit-box;
     display: -moz-box;
@@ -376,6 +387,7 @@ body, html {
 
 .sidebar-about-header-image-item {
   height: 100%;
+	background-color: #e4ebed;
 }
 
 .sidebar-about-header-title {
@@ -1638,11 +1650,14 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
-    clip-path: circle(50% at center);
+    
+	background-color: #e4ebed;
 }
 
 .sidebar-about-image-item {
     width: 100%;
+	background-color: #e4ebed;
+	clip-path: circle(50% at center);
 
 }
 
@@ -2954,11 +2969,16 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
-    clip-path: circle(50% at center);
+    
+	
+	background-color: #e4ebed;
 }
 
 .sidebar-about-image-item {
     width: 100%;
+	
+	background-color: #e4ebed;
+	clip-path: circle(50% at center);
 
 }
 
@@ -4252,11 +4272,16 @@ body, html {
 
 .sidebar-about-image {
     width: 110px;
-    clip-path: circle(50% at center);
+    
+	
+	background-color: #e4ebed;
 }
 
 .sidebar-about-image-item {
     width: 100%;
+	
+	background-color: #e4ebed;
+	clip-path: circle(50% at center);
 
 }
 
