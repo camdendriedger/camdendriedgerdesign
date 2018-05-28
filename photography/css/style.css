@@ -1075,7 +1075,9 @@ html, body {
 
 
 
-
+.mobile-nav {
+	display: none;
+}
 
 
 
