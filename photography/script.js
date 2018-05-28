@@ -4,7 +4,97 @@ $(document).ready(function() {
 	
 	
 	
+	$(".menu-button").on("click", function() {
+		
+    $(".sidebar").css("width", "100%");
+		
+		$(".sidebar").css("position", "fixed");
+		
+		$(".sidebar").css("background-color", "rgba(238, 238, 238, 0.9)");
+		
+		$(".grid-container").css("width", "100%");
+		
+		$(".nav-list").css("display", "none");
+		
+		$(".mobile-nav").css("right", "0");
+		
+		$(".path2").css("opacity", "0");
+		
+		$("#path1").css("d", 'path("M0,50 50,0")');
+		
+		$("#path3").css("d", 'path("M0,0 50,50")');
+		
+		$(".menu-button").css("bottom", "5vh");
+		
+		$(".menu-close-button-link").css("display", "flex");
+		
+		
+})
 	
+	
+	
+$(".menu-close-button-link").on("click", function() {
+	
+    $(".sidebar").css("width", "50px");
+		
+		$(".sidebar").css("position", "sticky");
+		
+		$(".sidebar").css("background-color", "eee");
+		
+		$(".grid-container").css("width", "calc (100% - 50px)");
+	
+		$(".nav").css("display", "block");
+		
+		$(".nav-list").css("display", "block");
+		
+		$(".mobile-nav").css("right", "200%");
+		
+		$(".path2").css("opacity", "1");
+		
+		$("#path1").css("d", 'path("M10,12.5 40,12.5")');
+		
+		$("#path3").css("d", 'path("M10,37.5 40,37.5")');
+		
+		$(".menu-button").css("bottom", "0");
+	
+		$(".menu-close-button-link").css("display", "none");
+		
+})
+	
+
+$(".link-close-button").on("click", function() {
+	
+    $(".sidebar").css("width", "50px");
+		
+		$(".sidebar").css("position", "sticky");
+		
+		$(".sidebar").css("background-color", "eee");
+		
+		$(".grid-container").css("width", "calc (100% - 50px)");
+		
+		$(".nav").css("display", "block");
+	
+	$(".nav-list").css("display", "block");
+		
+		$(".mobile-nav").css("right", "200%");
+		
+		$(".path2").css("opacity", "1");
+		
+		$("#path1").css("d", 'path("M10,12.5 40,12.5")');
+		
+		$("#path3").css("d", 'path("M10,37.5 40,37.5")');
+		
+		$(".menu-button").css("bottom", "0");
+	
+		$(".menu-close-button-link").css("display", "none");
+		
+})
+	
+	
+
+	
+	
+
 	
 	
 	
@@ -120,108 +210,11 @@ $(document).ready(function() {
   });
 		
 		
-		
-		
-		
-// Paralax scrolling code - works fine but leaves white space at the bottom that I can't fugure out how to fix yet. 		
-/*	
-		
-	$.fn.moveIt = function(){
-  var $window = $(window);
-  var instances = [];
-  
-  $(this).each(function(){
-    instances.push(new moveItItem($(this)));
-  });
-  
-  window.addEventListener('scroll', function(){
-    var scrollTop = $window.scrollTop();
-    instances.forEach(function(inst){
-      inst.update(scrollTop);
-    });
-  }, {passive: true});
-}
 
-var moveItItem = function(el){
-  this.el = $(el);
-  this.speed = parseInt(this.el.attr('data-scroll-speed'));
-};
 
-moveItItem.prototype.update = function(scrollTop){
-  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
-};
-
-// Initialization
-$(function(){
-  $('[data-scroll-speed]').moveIt();
-});
-		
-
-		
 
 		
 		
-		
-		
-$('#continue').click(function () {
-    		$('#important').toggle();
-    	});
-		
-		
-		
-		
-		
-		
-		
-// Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-		
-		
-		
-		
-    });
-
-*/
-		
-
 
 
 
