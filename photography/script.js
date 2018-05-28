@@ -12,7 +12,7 @@ $(document).ready(function() {
 		
 		$(".sidebar").css("background-color", "rgba(238, 238, 238, 0.9)");
 		
-		$(".grid-container").css("width", "100%");
+		//$(".grid-container").css("width", "100%");
 		
 		$(".nav-list").css("display", "none");
 		
@@ -41,7 +41,7 @@ $(".menu-close-button-link").on("click", function() {
 		
 		$(".sidebar").css("background-color", "eee");
 		
-		$(".grid-container").css("width", "calc (100% - 50px)");
+		//$(".grid-container").css("width", "calc (100% - 50px)");
 	
 		$(".nav").css("display", "block");
 		
@@ -70,7 +70,7 @@ $(".link-close-button").on("click", function() {
 		
 		$(".sidebar").css("background-color", "eee");
 		
-		$(".grid-container").css("width", "calc (100% - 50px)");
+		//$(".grid-container").css("width", "calc (100% - 50px)");
 		
 		$(".nav").css("display", "block");
 	
