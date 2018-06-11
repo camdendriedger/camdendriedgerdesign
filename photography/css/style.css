@@ -21,6 +21,56 @@ body {
   padding: 0;
 }
 
+
+
+.print-sales {
+
+  display: none;
+
+  background-color: rgba(238, 238, 238, 0.9);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+  z-index: 5999;
+
+
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.print-sales.text {
+  margin: 5px;
+}
+
+.print-sales.button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #333;
+}
+
+.print-sales.button:hover {
+  background-color: #777;
+}
+
+.print-sales.button-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+
 .screen-size {
   display: none;
 }
@@ -153,9 +203,18 @@ body {
 
 .arrow-link {
   width: 80px;
-  z-index: 5000;
+  z-index: 8900;
   position: absolute;
   bottom: 80px;
+}
+
+.arrow-link-fixed {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  z-index: 8900;
+  opacity: 0;
 }
 
 .cover-overlay {
@@ -255,6 +314,10 @@ body {
   z-index: 50;
 }
 
+.sidebar-fill-3 {
+  display: none;
+}
+
 .sidebar {
   background-color: #eee;
   width: 150px;
@@ -286,6 +349,7 @@ body {
 
 .nav {
   width: 100%;
+  z-index: 5000;
 }
 
 .nav-list {
@@ -307,6 +371,109 @@ body {
 .nav-list-item {
 
   width: 100%;
+}
+
+.sales-link {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  text-decoration: none;
+  color: #333;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sales-background {
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  opacity: .25;
+  z-index: 45;
+
+  clip-path: ellipse(30px 30px at 75px 105px);
+  transition: all .3s ease;
+}
+
+.sales-image-container {
+  opacity: .25;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  z-index: 50;
+
+  overflow: hidden;
+}
+
+img.sales-image {
+  transition: all .3s ease;
+  position: absolute;
+
+}
+
+img.sales-image.main {
+  opacity: 1;
+  width: 30%;
+  right: 0;
+  left: 0;
+  top: -17px;
+  margin: auto;
+}
+
+img.sales-image.main2 {
+  width: 40%;
+  bottom: 20px;
+  left: -100%;
+}
+
+img.sales-image.main3 {
+  width: 40%;
+  bottom: 35px;
+  right: -100%;
+}
+
+.sales-link:hover .sales-background {
+  clip-path: ellipse(200px 200px at center);
+}
+
+.sales-link:hover img.sales-image.main {
+  top: -70px;
+  opacity: 1;
+  width: 30%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.sales-link:hover img.sales-image.main2 {
+  left: 11px;
+}
+
+.sales-link:hover img.sales-image.main3 {
+  right: 11px;
+}
+
+.sales-link:hover .sales-text {
+  opacity: 0;
+}
+
+.sales-text {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 25px;
+  transition: all .3s ease;
 }
 
 .logo {
@@ -349,6 +516,12 @@ body {
 
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.category:last-child {
+  margin-bottom: 0;
+  border: 0;
+  padding-bottom: 0;
 }
 
 .row {
@@ -1372,14 +1545,29 @@ body {
   }
 
   .menu-button-svg {
+    height: 2px;
+    width: 25px;
+    background-color: #333;
+    margin: 3px;
+    transition: .5s all ease;
+    opacity: 1;
+
+    /*
+    border-top: .5px solid #333;
+
+
     transform: scale(.6);
     width: 50px;
-    height: 50px;
+    height: 10px;
     fill: none;
     stroke: #333;
     stroke-width: 3;
-    opacity: 1;
     transition: .5s all ease;
+
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    */
   }
 
   .menu-button-svg-path {
@@ -1431,6 +1619,24 @@ body {
     right: 200%;
   }
 
+  .mobile-nav-row {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 15px;
+  }
+
+  .sales-link {
+    left: -100%;
+  }
+
   .mobile-nav a:link,
   mobile-nav a:visited,
   .mobile-nav a {
@@ -1441,6 +1647,29 @@ body {
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
+  }
+
+  #link-close-button-2 {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat';
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .sidebar-fill-3 {
+    width: 150px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    float: left;
+    opacity: 0;
+    z-index: -1;
+
   }
 
 
