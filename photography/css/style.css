@@ -633,6 +633,10 @@ img.sales-image.main3 {
   flex: 0.562;
 }
 
+#rowa-6-1 {
+  flex: 1.5337;
+}
+
 #rowh-2-1:hover {
   flex: 1.244;
 }
@@ -920,6 +924,61 @@ img.sales-image.main3 {
 }
 
 
+#rowp-12-1:hover #rowp-12-1-hover-item {
+  display: flex;
+  opacity: 1;
+}
+
+#rowp-12-1:hover #rowp-12-1-item {
+  display: none;
+  opacity: 0;
+}
+
+#rowp-12-2:hover #rowp-12-2-hover-item {
+  display: flex;
+  opacity: 1;
+}
+
+#rowp-12-2:hover #rowp-12-2-item {
+  display: none;
+  opacity: 0;
+}
+
+
+
+#rowp-13-2:hover #rowp-13-2-hover-item {
+  display: flex;
+  opacity: 1;
+}
+
+#rowp-13-2:hover #rowp-13-2-item {
+  display: none;
+  opacity: 0;
+}
+
+#rowp-13-3:hover #rowp-13-3-hover-item {
+  display: flex;
+  opacity: 1;
+}
+
+#rowp-13-3:hover #rowp-13-3-item {
+  display: none;
+  opacity: 0;
+}
+
+
+#rowp-14-2:hover #rowp-14-2-hover-item {
+  display: flex;
+  opacity: 1;
+}
+
+#rowp-14-2:hover #rowp-14-2-item {
+  display: none;
+  opacity: 0;
+}
+
+
+
 
 
 #rowu-1-1:hover #rowu-1-1-hover-item {
@@ -1047,6 +1106,17 @@ img.sales-image.main3 {
 }
 
 #rowa-5-2:hover #rowa-5-2-item {
+  display: none;
+  opacity: 0;
+}
+
+
+#rowa-6-2:hover #rowa-6-2-hover-item {
+  display: flex;
+  opacity: 1;
+}
+
+#rowa-6-2:hover #rowa-6-2-item {
   display: none;
   opacity: 0;
 }
@@ -1205,6 +1275,19 @@ img.sales-image.main3 {
   width: 100%;
   height: 85vh;
 
+  /*
+  -webkit-transition: all .06s ease-in;
+  -moz-transition: all .06s ease-in;
+  -ms-transition: all .06s ease-in;
+  -o-transition: all .06s ease-in;
+  transition: all .06s ease-in;
+
+  -webkit-transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -ms-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s;
+  */
 }
 
 /* Next & previous buttons */
