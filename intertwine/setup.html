@@ -1,0 +1,104 @@
+<!doctype_html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Jquery and other effects, -->
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+  <div class="page_container">
+
+    <div class="page_title">Your Information</div>
+
+    <div class="signup_wrap">
+      <div class="name_textfield">
+<input type="text" name="firstname" placeholder="Name">
+      </div>
+      <div class="signup_togglerow">
+        <div class="female_btn" onclick="select_female()">Female</div>
+        <div class="male_btn" onclick="select_male()">Male</div>
+      </div>
+      <div class="signup_togglerow">
+        <div class="under_fifty_btn" onclick="select_50under()">Under 50</div>
+        <div class="over_fifty_btn" onclick="select_50over()">Over 50</div>
+      </div>
+    </div>
+
+    <div class="page_title">Sign Up</div>
+    <div class="signup_wrap">
+      <div id="email_textfield">
+      <input type="text" name="firstname" placeholder='E-mail'>
+    </div>
+
+      <div id="facebook_login_btn">
+        <i class="fab fa-facebook-f"></i>
+        Login</div>
+    </div>
+
+    <a class="next_button_setup next_button" href="topic.html">
+      Next
+      </a>
+
+  </div>
+
+  <script>
+
+    function select_male() {
+      var female = document.getElementsByClassName("female_btn")[0];
+      var male = document.getElementsByClassName("male_btn")[0];
+      male.style.backgroundColor = "#67A8D8";
+      male.style.color = "#fafafa";
+      female.style.backgroundColor= "#fafafa";
+      female.style.color= "#67A8D8";
+    }
+
+    function select_female() {
+      var female = document.getElementsByClassName("female_btn")[0];
+      var male = document.getElementsByClassName("male_btn")[0];
+      female.style.backgroundColor = "#67A8D8";
+      female.style.color = "#fafafa";
+      male.style.backgroundColor= "#fafafa";
+      male.style.color= "#67A8D8";
+
+    }
+
+
+      function select_50over() {
+          var under_fifty_btn = document.getElementsByClassName("under_fifty_btn")[0];
+          var over_fifty_btn = document.getElementsByClassName("over_fifty_btn")[0];
+          under_fifty_btn.style.backgroundColor = "#fafafa";
+              under_fifty_btn.style.color = "#67A8D8";
+          over_fifty_btn.style.backgroundColor= "#67A8D8";
+            over_fifty_btn.style.color= "#fafafa";
+        }
+
+    function select_50under() {
+      var under_fifty_btn = document.getElementsByClassName("under_fifty_btn")[0];
+      var over_fifty_btn = document.getElementsByClassName("over_fifty_btn")[0];
+      over_fifty_btn.style.backgroundColor = "#fafafa";
+      over_fifty_btn.style.color = "#67A8D8";
+      under_fifty_btn.style.backgroundColor= "#67A8D8";
+    under_fifty_btn.style.color= "#fafafa";
+    }
+
+  </script>
+
+</body>
+
+
+
+</html>

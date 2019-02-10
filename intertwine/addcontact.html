@@ -1,0 +1,86 @@
+<!doctype_html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Contacts</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Jquery and other effects, -->
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<a class="addcontact" href="contacts.html">
+  <div class="icon">
+      <img src="img/icons/people/male.svg" class="logo one"/>
+  </div>
+  <div class="page_subtitle">Add Contact?</div>
+  <div class="buttons">
+    <div class="button one">
+      Yes
+      </div>
+      <div class="button two">
+        No
+        </div>
+    </div>
+
+
+
+
+  </a>
+
+
+
+
+
+
+    <nav>
+      <a class="topics" href="topic.html">
+      	<img src="img/icons/navigation/topics.svg" class="logo-bitch"/>
+  		</a>
+
+      <a class="contacts active" href="contacts.html">
+        <img src="img/icons/navigation/contacts.svg" class="logo-bitch"/>
+  		</a>
+
+      <a class="profile" href="profile.html">
+        <img src="img/icons/navigation/profile.svg" class="logo-bitch"/>
+  		</a>
+    </nav>
+
+
+  </body>
+
+  <script>
+
+    function openWin() {
+       window.open("https://appr.tc/r/chatroom","_blank",
+       "status=no,height=600 ,width= 600 ,resizable=yes, left=" + window.screen.width / 3.3 + ",top="
+       + window.screen.height / 7 + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+    }
+
+    function select_locate() {
+      var menu = document.getElementsByClassName("location_menu")[0];
+
+      menu.style.bottom= "70px";
+
+    }
+
+  </script>
+
+  </html>
