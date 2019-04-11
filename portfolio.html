@@ -1,2064 +1,1019 @@
 <!doctype html>
 
-	<html>
 
-	<head>
+<html>
+
+
+
+<head>
+
+    <meta chartset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,800,900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Teko:400,500" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">
+
 		<title>
-		Portfolio
+		Camden Driedger Design
 		</title>
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="js/portfolio.js" type="text/javascript"></script>
 
-	</head>
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 
-	<body>
+		<script>
+			$(document).ready(function() {
+				$('.nav-tabs > li > a').click(function(event){
+					event.preventDefault();//stop browser to take action for clicked anchor
 
-		
+					//get displaying tab content jQuery selector
+					var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+					//find actived navigation and remove 'active' css
+					var actived_nav = $('.nav-tabs > li.active');
+					actived_nav.removeClass('active');
+
+					//add 'active' css into clicked navigation
+					$(this).parents('li').addClass('active');
+
+					//hide displaying tab content
+					$(active_tab_selector).removeClass('active');
+					$(active_tab_selector).addClass('hide');
+
+					//show target tab content
+					var target_tab_selector = $(this).attr('href');
+					$(target_tab_selector).removeClass('hide');
+					$(target_tab_selector).addClass('active');
+				});
+			});
+		</script>
+
+</head>
 
 
-		<!---------- HEADER ---------->
 
-		<div class="header">
 
-			<a href="index.html" class="menu-link"><img src="img/logo.svg" class="header-logo"></a>
+
+<body>
+
+
+
+
+
+
+<div class="main-content">
+
+
+<header class="header desktop one portfolio">
+
+	<div class="sidebar-container desktop">
+	<div class="sidebar desktop">
+		<nav class="nav side text desktop">
+			<a class="item desktop" href="index.html#about">About</a>
+			<a class="item desktop" href="portfolio.html">Work</a>
+			<a class="item desktop" href="contact.html">Contact</a>
+		</br>
+		</br>
+		<a class="item desktop" href="index.html">Home</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="logo container desktop header-logo-container">
+
+		<svg class="logo image logo-top" viewBox="0 0 6.9 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M6.4.5v8.2H4.6C2.3 8.7.5 6.9.5 4.6S2.3.5 4.6.5v1.8c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+		<svg class="logo image hamburger" viewBox="0 0 9.8 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M0,0.5h9.8 M0,4.6h9.8 M0,8.7h9.8" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+	</div>
+
+</header>
+
+
+
+
+
+<header class="header mobile one">
+
+	<div class="header-bar">
+	</div>
+
+	<div class="sidebar-container sidebar-container-mobile mobile-nav-button">
+	<div class="sidebar sidebar-mobile">
+		<div class="close-button mobile">
+			<svg class="close-button-svg mobile" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 9 9"
+			<style type="text/css">
+				.st0{fill:none;stroke:#F7F1EB;stroke-miterlimit:10;}
+			</style>
+			<defs>
+			</defs>
+			<line class="st0" x1="0.4" y1="8.6" x2="8.6" y2="0.4"/>
+			<line class="st0" x1="0.4" y1="0.4" x2="8.6" y2="8.6"/>
+			</svg>
+		</div>
+		<nav class="nav side text mobile">
+			<a class="item mobile" href="index.html#about">About</a>
+			<a class="item mobile" href="portfolio.html">Work</a>
+			<a class="item mobile" href="contact.html">Contact</a>
+		</br>
+		</br>
+		<a class="item mobile" href="index.html">Home</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="logo container header-logo-container-mobile header-logo-container">
+
+		<svg class="logo image logo-top" viewBox="0 0 6.9 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M6.4.5v8.2H4.6C2.3 8.7.5 6.9.5 4.6S2.3.5 4.6.5v1.8c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+		<svg class="logo image hamburger" viewBox="0 0 9.8 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M0,0.5h9.8 M0,4.6h9.8 M0,8.7h9.8" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+	</div>
+
+</header>
+
+
+<header class="header two header-two">
+
+	<nav class="nav top text">
+		<a class="item" href="index.html#about">About</a>
+		<a class="item" href="portfolio.html">Portfolio</a>
+		<a class="item" href="contact.html">Contact</a>
+	</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<div class="banner">
+
+	<div class="title" data-scroll-speed="-3">
+		PORTFOLIO
+	</div>
+
+	<div class="banner-marker">
+	</div>
+	<div class="banner-marker-two">
+	</div>
+	<div class="banner-background">
+
+		<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In  -->
+		<svg class="banner-background-svg" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 1919.7 513">
+		<style type="text/css">
+			.st0{fill:url(#SVGID_1_);}
+			.st1{fill:url(#SVGID_2_);}
+			.st2{fill:url(#SVGID_3_);}
+			.st3{fill:url(#SVGID_4_);}
+			.st4{fill:url(#SVGID_5_);}
+			.st5{fill:url(#SVGID_6_);}
+			.st6{fill:url(#SVGID_7_);}
+			.st7{fill:url(#SVGID_8_);}
+		</style>
+		<defs>
+		</defs>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="315.4788" y1="652.1793" x2="2114.0691" y2="-452.2183">
+				<stop  offset="0" style="stop-color:#DB4B27"/>
+				<stop  offset="1" style="stop-color:#FAA552"/>
+			</linearGradient>
+			<path data-scroll-speed="-1" class="st0 one" d="M1919.7,513H0V0h1919.7V513z"/>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="579.7902" y1="747.0555" x2="2193.5137" y2="-243.8274">
+				<stop  offset="0" style="stop-color:#DB4B27"/>
+				<stop  offset="1" style="stop-color:#FAA552"/>
+			</linearGradient>
+			<path data-scroll-speed="-2" class="st1 two" d="M229.7,513c0,0-52.6-267,399.5-267C887,246,906.8,0,906.8,0h1013v513H229.7z"/>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="743.5244" y1="723.9393" x2="2250.6965" y2="-201.5174">
+				<stop  offset="0" style="stop-color:#DB4B27"/>
+				<stop  offset="1" style="stop-color:#FAA552"/>
+			</linearGradient>
+			<path data-scroll-speed="-5" class="st2 three" d="M362.1,513c0,0-30.1-165.1,387.3-176.9C1250.3,321.8,1373,0,1373,0h546.7v513H362.1z"/>
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="983.9288" y1="724.069" x2="2302.5444" y2="-85.6073">
+				<stop  offset="0" style="stop-color:#DB4B27"/>
+				<stop  offset="1" style="stop-color:#FAA552"/>
+			</linearGradient>
+			<path data-scroll-speed="-10" class="st3" d="M752.3,513c0,0,314.4-266.2,713.2-266.2c453.2,0,454.3-191.8,454.3-191.8v283.3V513H752.3z"/>
+		</g>
+		</svg>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="secondary-nav">
+	<ul class="nav nav-tabs items-container">
+		<li class="active">
+			<a href="#tab1" class="item secondary-nav-item text print-close-button">Featured</a>
+		</li>
+	</br>
+		<li>
+			<a href="#tab2" class="item secondary-nav-item text print-close-button">Branding</a>
+		</li>
+		<li>
+			<a href="#tab3" class="item secondary-nav-item nav-item-print text">Print</a>
+		</li>
+		<li>
+			<a href="#tab4" class="item secondary-nav-item text print-close-button">Interaction</a>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+<!------- FEATURED PROJECTS ------->
+
+<section id="tab1" class="tab-content featured active not-print">
+
+		<div class="row">
+
+			<div class="item left">
+
+				<div class="text-container">
+					<div class="title text">
+						Formal in CMYK
+					</div>
+					<div class="category text">
+						Branding
+					</div>
+					<a href="projects/fuckthestrike.html" class="button text">
+						View Project
+					</a>
+				</div>
+
+				<div class="gradient-background three">
+				</div>
+
+				<div class="image-container">
+					<div class="image-container-two">
+						<img src="img/projects/thumbnails/formal.png" class="image-thumbnail three"/>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="item">
+
+				<div class="text-container">
+					<div class="title text">
+						Simple Save App
+					</div>
+					<div class="category text">
+						UI/UX, Visual Design
+					</div>
+					<a href="projects/fuckthestrike.html" class="button text">
+						View Project
+					</a>
+				</div>
+
+				<div class="gradient-background two">
+				</div>
+
+				<div class="image-container">
+					<div class="image-container-two">
+						<img src="img/projects/thumbnails/simplesave2.png" class="image-thumbnail two"/>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="item left">
+
+				<div class="text-container">
+					<div class="title text">
+						Fuck the Strike
+					</div>
+					<div class="category text">
+						Branding / Social Campaign
+					</div>
+					<a href="projects/fuckthestrike.html" class="button text">
+						View Project
+					</a>
+				</div>
+
+				<div class="gradient-background one">
+				</div>
+
+				<div class="image-container">
+					<div class="image-container-two">
+						<img src="img/projects/thumbnails/fuckthestrike.svg" class="image-thumbnail one"/>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="item">
+
+				<div class="text-container">
+					<div class="title text">
+						A Chance In Time
+					</div>
+					<div class="category text">
+						Photography, Videography
+					</div>
+					<a href="projects/fuckthestrike.html" class="button text">
+						View Project
+					</a>
+				</div>
+
+				<div class="gradient-background four">
+				</div>
+
+				<div class="text-backing">
+				</div>
+
+				<div class="image-container">
+					<div class="image-container-two">
+						<img src="img/projects/thumbnails/chance.jpg" class="image-thumbnail four"/>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="item left">
+
+				<div class="text-container">
+					<div class="title text">
+						Multiples
+					</div>
+					<div class="category text">
+						Wed Development / Animations
+					</div>
+					<a href="projects/fuckthestrike.html" class="button text">
+						View Project
+					</a>
+				</div>
+
+				<div class="gradient-background five">
+				</div>
+
+				<div class="image-container">
+					<div class="image-container-two">
+						<img src="img/projects/thumbnails/multiples.svg" class="image-thumbnail five"/>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="item fill"></div>
+
+		</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- ---------- branding --------- -->
+
+
+<section id="tab2" class="tab-content hide branding not-print">
+	<div class="grid">
+
+		<div class="grid-item" onclick="openModal();currentSlide(1)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/hunter-trembley.svg" class="image black one">
+				<img src="img/branding/colour/hunter-trembley.svg" class="image colour one">
+			</div>
+			<div class="backing-container">
+				<div class="backing one"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(2)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/gilliane-gignac.svg"  class="image black two">
+				<img src="img/branding/colour/gilliane-gignac.svg" class="image colour two">
+			</div>
+			<div class="backing-container">
+				<div class="backing two"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(3)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/cowlick.svg"  class="image black three">
+				<img src="img/branding/colour/cowlick.svg" class="image colour three">
+			</div>
+			<div class="backing-container">
+				<div class="backing three"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(4)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/umei.svg"  class="image black four">
+				<img src="img/branding/colour/umei.svg" class="image colour four">
+			</div>
+			<div class="backing-container">
+				<div class="backing four"></div>
+			</div>
+		</div>
+
+		<div class="grid-item right-1" onclick="openModal();currentSlide(5)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/maple-tree.svg"  class="image black five">
+				<img src="img/branding/colour/maple-tree.svg" class="image colour five">
+			</div>
+			<div class="backing-container">
+				<div class="backing five"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(6)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/witness.svg"  class="image black six">
+				<img src="img/branding/colour/witness.svg" class="image colour six">
+			</div>
+			<div class="backing-container">
+				<div class="backing six"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(7)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/abstract.svg"  class="image black seven">
+				<img src="img/branding/colour/abstract.svg" class="image colour seven">
+			</div>
+			<div class="backing-container">
+				<div class="backing seven"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(8)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/surf-turf.svg"  class="image black eight">
+				<img src="img/branding/colour/surf-turf.svg" class="image colour eight">
+			</div>
+			<div class="backing-container">
+				<div class="backing eight"></div>
+			</div>
+		</div>
+
+		<div class="grid-item" onclick="openModal();currentSlide(9)">
+			<div class="image-container">
+				<img src="img/branding/monochrome/lightning.svg"  class="image black nine">
+				<img src="img/branding/colour/lightning.svg" class="image colour nine">
+			</div>
+			<div class="backing-container">
+				<div class="backing nine"></div>
+			</div>
+		</div>
+
+		<div class="grid-item grid-fill right-1">
+		</div>
+
+	</div>
+</section>
+
+
+
+<div class="grid-container display-none" id="grid-container">
+
+		<div class="row" id="row-1">
+
+			<div class="image-container" id="row-1-1">
+				<img src="img/print/small/glass-slipper.jpg" onclick="openModal();currentSlide(10)" class="photo d" id="row-1-1-item">
+			</div>
+
+			<div class="image-container" id="row-1-2">
+				<img src="img/print/small/first-year-jam.jpg" onclick="openModal();currentSlide(11)" class="photo" id="row-1-2-item">
+			</div>
+
+			<div class="image-container" id="row-1-3">
+				<img src="img/print/small/lowell.png" onclick="openModal();currentSlide(12)" class="photo" id="row-1-3-item">
+			</div>
+
+			<div class="image-container" id="row-1-4">
+				<img src="img/print/small/design-culture.png" onclick="openModal();currentSlide(13)" class="photo" id="row-1-4-item">
+			</div>
+
+		</div>
+
+
+		<div class="row" id="row-2">
+
+			<div class="image-container" id="row-2-1">
+				<img src="img/print/small/toronto-munchies.png" onclick="openModal();currentSlide(14)" class="photo" id="row-2-1-item">
+			</div>
+
+			<div class="image-container" id="row-2-2">
+				<img src="img/print/small/voice.gif" onclick="openModal();currentSlide(15)" class="photo" id="row-2-2-item">
+			</div>
+
+			<div class="image-container" id="row-2-3">
+				<img src="img/print/small/pizza.png" onclick="openModal();currentSlide(16)" class="photo" id="row-2-3-item">
+			</div>
+
+		</div>
+
+
+		<div class="row" id="row-3">
+
+			<div class="image-container" id="row-3-1">
+				<img src="img/print/small/sound-of-the-city.jpg" onclick="openModal();currentSlide(17)" class="photo" id="row-2-1-item">
+			</div>
+
+			<div class="image-container" id="row-3-2">
+				<img src="img/print/small/sweaty-lake.jpg" onclick="openModal();currentSlide(18)" class="photo" id="row-2-2-item">
+			</div>
+
+			<div class="image-container" id="row-3-3">
+				<img src="img/print/small/skyworthy.png" onclick="openModal();currentSlide(19)" class="photo" id="row-2-3-item">
+			</div>
+
+		</div>
+
+
+
+
 
 		<!--
-		<a href="index.html" class='menu-link' id="menu-link-2">
-			<p class="header-title">Camden Driedger</p>
-		</a>
+		<div class="row" id="row-3">
+
+			<div class="image-container" id="row-3-1">
+				<img src="img/print/small/sound-of-the-city.jpg" onclick="openModal();currentSlide(4)" class="photo" id="row-3-1-item">
+			</div>
+
+			<div class="image-container" id="row-3-2">
+				<img src="img/print/small/sweaty-lake.jpg" onclick="openModal();currentSlide(5)" class="photo" id="row-3-2-item">
+			</div>
+
+			<div class="image-container" id="row-3-3">
+				<img src="img/print/small/skyworthy.png" onclick="openModal();currentSlide(5)" class="photo" id="row-3-3-item">
+			</div>
+
+		</div>
 		-->
 
-		<a class="header-link" class="active" href="about2.html">
-			<p class="header-subtitle">About</p>
-		</a>
+	</div>
 
-		<a class="header-link" href="portfolio.html">
-			<p class="header-subtitle">Portfolio</p>
-		</a>
-			
-		<a class="header-link" href="mailto:camden@driedger.design?subject=Contact Me&body=Alternatively, you can contact me at (519) 990-0360 for any inquiries" class="content-button"><p class="header-subtitle">Contact</p></a>
 
-			<a href="#" id="menu-button" class="menu-link">
-				<p class="header-menu"><img src="img/menu.svg" class="menu-image"></p>
-			</a>
+<!--------- PRINT -------->
+
+<section id="tab3" class="tab-content print hide">
+
+
+
+	<!--
+	<div class="grid">
+
+		<div class="row">
+			<img src="img/print/small/glass-slipper.jpg" class="image" id="row-1-1">
+			<img src="img/print/small/first-year-jam.jpg" class="image" id="row-1-2">
+			<img class="image" src="img/print/small/lowell.png" id="row-1-3">
+			<img class="image" src="img/print/small/design-culture.png" id="row-1-4">
+		</div>
+
+	</div>
+	-->
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="tab4" class="tab-content interaction hide not-print">
+	<div>
+
+
+
+		<div class="row">
+
+			<div class="item noxo">
+
+				<div class="text-container">
+					<div class="title text">
+						NØXO
+					</div>
+					<div class="category text">
+						Promotional Website
+					</div>
+					<a href="projects/fuckthestrike.html" class="button text">
+						View Project
+					</a>
+				</div>
+
+				<div class="gradient-background four">
+				</div>
+
+				<div class="text-backing">
+				</div>
+
+				<div class="image-container">
+					<div class="image-container-two">
+						<img src="img/interaction/noxo.jpg" class="image-thumbnail four"/>
+					</div>
+				</div>
+
+				<div class="image-container-interaction">
+					<div class="image-container-two">
+						<img src="img/interaction/noxo.svg" class="image-thumbnail interaction-one"/>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="item announcement">
+
+				<div class="text-container">
+					<div class="title text">
+						STAY TUNED!
+					</div>
+					<div class="category text">
+						More Web Design, Development, and UI Design on the way!
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container one">
+				<img src="img/branding/colour/hunter-trembley.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container two">
+				<img src="img/branding/colour/gilliane-gignac.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container three">
+				<img src="img/branding/colour/cowlick.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container four">
+				<img src="img/branding/colour/umei.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container five">
+				<img src="img/branding/colour/maple-tree.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container six">
+				<img src="img/branding/colour/witness.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container seven">
+				<img src="img/branding/colour/abstract.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container eight">
+				<img src="img/branding/colour/surf-turf.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container nine">
+				<img src="img/branding/colour/lightning.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/glass-slipper.jpg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/first-year-jam.jpg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/lowell.png" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/design-culture.png" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/toronto-munchies.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/voice.svg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/pizza.png" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/sound-of-the-city.jpg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/sweaty-lake.jpg" class="modal-image">
+			</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="modal-container">
+			<div class="image-container print">
+				<img src="img/print/large/skyworthy.png" class="modal-image">
+			</div>
+			</div>
 		</div>
 
 
 
 
 
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
-		<!---------- MAIN ---------->
 
-		<div class="main">
+	</div>
+</div>
 
 
 
-			<!---------- NAVIGATION ---------->
 
-			<div class="nav">
-				<div id="nav-center">
 
-					<ul class=nav-list>
-						<li class="nav-list-item"><a href="#branding" id="brandinglink" class="nav-list-item-link">Branding</a></li>
 
-						<li class="nav-list-item"><a href="#print" class="nav-list-item-link">Print Design</a></li>
 
-						<li class="nav-list-item"><a href="#web" class="nav-list-item-link">Web Design</a></li>
 
-						<li class="nav-list-item"><a href="#shirt" class="nav-list-item-link">T-shirt Design</a></li>
 
-						<li class="nav-list-item"><a href="#photo" class="nav-list-item-link">Photography</a></li>
 
-						<li class="nav-list-item"><a href="#video" class="nav-list-item-link">Videography</a></li>
 
 
-					</ul>
 
 
 
-				</div>
-			</div>
 
 
 
 
 
 
-			<!---------- CONTENT ---------->
 
 
-			<div class="right">
 
+</div>
 
 
-
-				<!---------- BRANDING ---------->
-
-				<!-- in some places it may say logo but that's just cause im too lazy to change it -->
-
-
-				<div id="branding" class="category-container">
-					<div class="title-container">
-						<p class="title">
-							BRANDING
-						</p>
-					</div>
-
-
-
-					<div class="grid">
-						<a class="grid-link" id="logo1js">
-							<div class="grid-item" id="logo1">
-								<p class="text-hover">
-									30 Hour Famine</p>
-							</div>
-						</a>
-
-						<a class="grid-link" id="logo2js">
-							<div class="grid-item" id="logo2">
-								<p class="text-hover">
-									Witness</p>
-							</div>
-						</a>
-
-						<a class="grid-link" id="logo3js">
-							<div class="grid-item" id="logo3">
-								<p class="text-hover">
-									Lightning Logo</p>
-							</div>
-						</a>
-
-						<a class="grid-link" id="logo4js">
-							<div class="grid-item" id="logo4">
-								<p class="text-hover">
-									Hunter Trembley Accoutning</p>
-							</div>
-						</a>
-
-						<!--
-        <a class="grid-link" id="logo5js"><div class="grid-item" id="logo5"><p class="text-hover">
-				UMEI Tshirt</p></div></a>
-			-->
-
-						<a class="grid-link" id="logo6js">
-							<div class="grid-item" id="logo6">
-								<p class="text-hover">
-									Gilliane Gignac Game Design</p>
-							</div>
-						</a>
-
-						<a class="grid-link" id="logo7js">
-							<div class="grid-item" id="logo7">
-								<p class="text-hover">
-									Maple Tree Bookkeeping</p>
-							</div>
-						</a>
-
-						<a class="grid-link" id="logo8js">
-							<div class="grid-item" id="logo8">
-								<p class="text-hover">
-									UMEI Christian High School</p>
-							</div>
-						</a>
-
-						<a class="grid-link" id="logo9js">
-							<div class="grid-item" id="logo9">
-								<p class="text-hover">
-									Lightning Bolt</p>
-							</div>
-						</a>
-
-
-						<!--
-				<a class="grid-link" id="logo10js"><div class="grid-item" id="logo10"><p class="text-hover">
-				Lightning Bolt</p></div></a>
-			-->
-
-						<div id="grid-fill"></div>
-
-
-					</div>
-				</div>
-
-
-
-
-
-				<!---------- PRINT DESIGN ---------->
-
-
-				<div id="print" class="category-container">
-					<div class="title-container">
-						<p class="title">
-							PRINT DESIGN
-						</p>
-					</div>
-
-
-
-					<div class="grid">
-						<a id="print1js" class="grid-link">
-							<div class="grid-item" id="print1">
-								<p class="text-hover">
-									Good Friday Poster</p>
-							</div>
-						</a>
-
-						<a id="print2js" class="grid-link">
-							<div class="grid-item" id="print2">
-								<p class="text-hover">
-									Surf &#38; Turf Ticket </p>
-							</div>
-						</a>
-
-						<a id="print3js" class="grid-link">
-							<div class="grid-item" id="print3">
-								<p class="text-hover">
-									Witness Poster</p>
-							</div>
-						</a>
-
-						<a id="print4js" class="grid-link">
-							<div class="grid-item" id="print5">
-								<p class="text-hover">
-									Sound of the City Album Cover</p>
-							</div>
-						</a>
-
-						<a id="print6js" class="grid-link">
-							<div class="grid-item" id="print6">
-								<p class="text-hover">
-									Design Culture Now Poster</p>
-							</div>
-						</a>
-
-						<a id="print5js" class="grid-link">
-							<div class="grid-item" id="print4">
-								<p class="text-hover">
-									Skyworthy Album Cover</p>
-							</div>
-						</a>
-
-						<a id="print7js" class="grid-link">
-							<div class="grid-item" id="print7">
-								<p class="text-hover">
-									Boat Image </p>
-							</div>
-						</a>
-
-						<a id="print8js" class="grid-link">
-							<div class="grid-item" id="print8">
-								<p class="text-hover">
-									Star Illustration</p>
-							</div>
-						</a>
-
-						<a id="print9js" class="grid-link">
-							<div class="grid-item" id="print9">
-								<p class="text-hover">
-									Biker Illustration</p>
-							</div>
-						</a>
-
-						<a id="print10js" class="grid-link">
-							<div class="grid-item" id="print10">
-								<p class="text-hover">
-									Glass Slipper Poster</p>
-							</div>
-						</a>
-
-						<a id="print11js" class="grid-link">
-							<div class="grid-item" id="print11">
-								<p class="text-hover">
-									Cinema &#38; the City Poster </p>
-							</div>
-						</a>
-
-						<a id="print12js" class="grid-link">
-							<div class="grid-item" id="print12">
-								<p class="text-hover">
-									Hopeless Romantic Album Cover</p>
-							</div>
-						</a>
-
-						<a id="print13js" class="grid-link">
-							<div class="grid-item" id="print13">
-								<p class="text-hover">
-									Sunset Boat Illustration</p>
-							</div>
-						</a>
-
-						<a id="print14js" class="grid-link">
-							<div class="grid-item" id="print14">
-								<p class="text-hover">
-									Lowell George Poster</p>
-							</div>
-						</a>
-
-
-
-
-
-
-
-						<div id="grid-fill"></div>
-
-
-
-
-
-
-
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-
-
-				<!---------- WEB DESIGN ---------->
-
-
-				<div id="web" class="category-container">
-					<div class="title-container">
-						<p class="title">
-							WEB DESIGN-DEVELOPMENT
-						</p>
-					</div>
-
-
-
-					<div class="grid">
-
-
-
-						<a href="file:///Users/Camden/Documents/GitHub/camdendriedgerdesign/index.html" target="_blank" id="web1js" class="grid-link">
-							<div class="grid-item" id="web1">
-								<p class="text-hover">
-									Portfolio Website</p>
-							</div>
-						</a>
-
-
-
-						<a id="web2js" class="grid-link">
-							<div class="grid-item" id="web2">
-								<p class="text-hover">
-									Multiples</p>
-							</div>
-						</a>
-
-
-
-
-						<a id="web3js" class="grid-link">
-							<div class="grid-item" id="web3">
-								<p class="text-hover">
-									Process Website</p>
-							</div>
-						</a>
-						
-						<a id="web4js" class="grid-link">
-							<div class="grid-item" id="web4">
-								<p class="text-hover">
-									A Chance In Time</p>
-							</div>
-						</a>
-
-
-
-
-
-						<div id="grid-fill"></div>
-
-
-
-
-
-
-
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-
-
-				<!---------- TSHIRT DESIGN ---------->
-
-
-				<div id="shirt" class="category-container">
-					<div class="title-container">
-						<p class="title">
-							TSHIRT DESIGN
-						</p>
-					</div>
-
-
-
-					<div class="grid">
-
-						<a id="shirt2js" class="grid-link">
-							<div class="grid-item" id="shirt2">
-								<p class="text-hover">
-									MSC Choral Festival Tshirt</p>
-							</div>
-						</a>
-
-						<a id="shirt4js" class="grid-link">
-							<div class="grid-item" id="shirt4">
-								<p class="text-hover">
-									UMEI Christian High School Tshirt</p>
-							</div>
-						</a>
-
-						<a id="shirt3js" class="grid-link">
-							<div class="grid-item" id="shirt3">
-								<p class="text-hover">
-									UMEI Christian High School Tshirt</p>
-							</div>
-						</a>
-
-						<a id="shirt1js" class="grid-link">
-							<div class="grid-item" id="shirt1">
-								<p class="text-hover">
-									30 Hour Famine Tshirt</p>
-							</div>
-						</a>
-
-
-
-
-
-						<div id="grid-fill"></div>
-
-
-
-
-
-
-
-					</div>
-				</div>
-
-
-				<!---------- Photography ---------->
-
-
-				<div id="photo" class="category-container">
-					<div class="title-container">
-						<p class="title">
-							Photography
-						</p>
-					</div>
-
-
-
-					<div class="grid">
-						
-						<a href="photography/photography.html" id="photo-grid-link" class="grid-link" >
-							<div class="grid-item" id="photo1">
-								<p class="text-hover">View My Photography Website
-								</p>
-							</div>
-						</a>
-						
-						<!--
-
-						<a id="photo1js" class="grid-link">
-							<div class="grid-item" id="photo1">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo2js" class="grid-link">
-							<div class="grid-item" id="photo2">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo3js" class="grid-link">
-							<div class="grid-item" id="photo3">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo4js" class="grid-link">
-							<div class="grid-item" id="photo4">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo5js" class="grid-link">
-							<div class="grid-item" id="photo5">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo6js" class="grid-link">
-							<div class="grid-item" id="photo6">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo7js" class="grid-link">
-							<div class="grid-item" id="photo7">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo8js" class="grid-link">
-							<div class="grid-item" id="photo8">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-						<a id="photo9js" class="grid-link">
-							<div class="grid-item" id="photo9">
-								<p class="text-hover">
-								</p>
-							</div>
-						</a>
-
-
-
-
-
-
-
-						<div id="grid-fill"></div>
-
-						-->
-
-
-
-
-
-					</div>
-				</div>
-
-
-
-
-				<!-- ------ VIDEOGRAPHY ---------->
-
-
-				<div id="video" class="category-container">
-					<div class="title-container">
-						<p class="title">
-							Videography
-						</p>
-					</div>
-
-
-
-					<div class="grid" class="grid-video">
-
-
-						<!--
-											<a href="https://www.flickr.com/photos/135705273@N08/34589271784/in/dateposted/" target="_blank" id="video1js" class="grid-link"><div class="grid-item" id="video1">
-												<img src="https://farm5.staticflickr.com/4261/34589271784_fdd8fb2208_z.jpg" id="video-1-img">
-												<p class="text-hover">
-											UMEI Promo Video</p></div></a>
-										-->
-						<a class="grid-link-1" id="video1js">
-							<div class="grid-item-item">
-								<iframe class="video-video" src="https://www.youtube.com/embed/rjIbfWBkAyM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-						</a>
-
-						<a class="grid-link-1" id="video1js">
-							<div class="grid-item-item">
-								<iframe class="video-video" src="https://www.youtube.com/embed/uIKFMiYEl3g?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-						</a>
-
-
-
-
-
-
-
-						<div id="grid-fill"></div>
-
-
-
-
-
-
-
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-
-
-			</div>
-
-
-
-		</div>
-
-
-		<!----------------POPUPS--------------------->
-
-
-
-
-
-
-
-		<!-- BRANDING -->
-
-
-
-
-
-
-
-
-
-		<!-- branding 1 -->
-
-		<a id="close-button-1-1">
-			<div class="wrapper" id="wrapper-1-1">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-						
-							<img src="img/branding/small/1.gif" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								30 Hour Famine
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								The 30 Hour Famine is an annual fundraiser where participants take part in a 30 hour fast, and was started in 2016 to create awareness and raise money for Syrian refugees.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- branding 2 -->
-
-		<a id="close-button-1-2">
-			<div class="wrapper" id="wrapper-1-2">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/2.svg" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								'Witness' - MSC Choral Festival
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								The MSC Choral Festival is an annual Choir Festival, hosted by UMEI Christian High School in 2018. The theme chosen was 'Witness', and the idea which this logo communicates is the word of God being spread though music.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- branding 3 -->
-
-		<a id="close-button-1-3">
-			<div class="wrapper" id="wrapper-1-3">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/3.svg" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								UMEI Lightning
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								Created as an experimental athletic team logo, it would represent the "UMEI Lignting". It combines the letter U for UMEI, L for Lignting, as well as the lignting bolt which is mid strike and displays atheltic aggressiveness.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- branding 4 -->
-
-		<a id="close-button-1-4">
-			<div class="wrapper" id="wrapper-1-4">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/4.svg" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Hunter Trembley Accounting
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								Created for Cowlick Studios as freelance work, this logo is a solution to the visual problem presented by the client. It combines pillars, as requested by the client, which represent strentgh and trust, in addition to a seperate ideation that combines the business name's initials (H &#38; T)</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-		<!-- branding 5 -->
-
-		<a id="close-button-1-5">
-			<div class="wrapper" id="wrapper-1-5">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/.png" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Gillianne Gignac Game Design
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This individual wanted a logo to represent their Game Design work.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-		<!-- branding 6 -->
-
-		<a id="close-button-1-6">
-			<div class="wrapper" id="wrapper-1-6">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/6.svg" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Gillianne Gignac Game Design
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This individual client wanted a logo to represent their Game Design work. They wanted to the logo to incorporate some sort of game controller. The controller was combined with their initials to create the logo.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-		<!-- branding 7 -->
-
-		<a id="close-button-1-7">
-			<div class="wrapper" id="wrapper-1-7">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/7.svg" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Maple Tree Bookkeeping
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This logo was done as freelance work for Cowlick Studios. It represents the company name through use of maple tree imagery but also connotes the idea blossoming or growing a business.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-		<!-- branding 8 -->
-
-		<a id="close-button-1-8">
-			<div class="wrapper" id="wrapper-1-8">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/8.png" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								UMEI Christian High School Logo
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								After a request was made for a logo that would work as an athletic and general logo and was one that students would enjoy wearing casually, this logo was created.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-		<!-- branding 9 -->
-
-		<a id="close-button-1-9">
-			<div class="wrapper" id="wrapper-1-9">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img src="img/branding/small/9.svg" class="popup-test-image-1">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Lightning Bolt Logo
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This logo for a fundraiser run was created for a request for a logo that would combine the UMEI Lightning branding, and would include a lightning bolt, in combination with something that would communicate running. </div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-
-
-		<!-- PRINT -->
-
-
-
-
-
-
-
-
-
-		<!-- print 1 -->
-
-		<a id="close-button-2-1">
-			<div class="wrapper" id="wrapper-2-1">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-1" src="img/print/small/1.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Good Friday Poster
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This piece was created to be used as a bulletin cover at a Good Friday service.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-		<!-- print 2 -->
-
-		<a id="close-button-2-2">
-			<div class="wrapper" id="wrapper-2-2">
-				<div class="popup-test" id="popup-test-2-2">
-					<div class="popup-test-container" id="popup-test-container-2-2">
-
-						<div id="image-2-2-container" class="popup-test-image-container">
-							<img id="image-2-2" src="img/print/small/2.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-2-2">
-
-							<div class="popup-test-text-title">
-								Surf 	&amp; Turf Ticket / Logo
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This logo and ticket design was created for an annual summer event. The logo has a rustic tone and is appopriate when thinking about 'surf' as well as 'turf'. The ticket uses the logo and expands on the brading styles used in the logo to create an attractive ticket enticing potential customers to purchase and attend.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-		<!-- print 3 -->
-
-		<a id="close-button-2-3">
-			<div class="wrapper" id="wrapper-2-3">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-3" src="img/print/small/3.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								'Witness' MSC Choral Festival Poster
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								The MSC Choral Festival is an annual Choir Festival, hosted by UMEI Christian High School in 2018. The theme chosen was 'Witness', and the idea which this poster communicates is the word of God being spread though music.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-		<!-- print 4 -->
-
-		<a id="close-button-2-4">
-			<div class="wrapper" id="wrapper-2-4">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-4" src="img/print/small/5.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								"Sound of the City" - Album Cover
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This album cover was created for a theoretical band named 'Sound of the City'. The album cover incorporates the two, Sound and City, by using sound bars as the reflection of the city.
-							</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- print 5 -->
-
-		<a id="close-button-2-5">
-			<div class="wrapper" id="wrapper-2-5">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-5" src="img/print/small/4.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								This Time It's Personal - Album Cover
-							</div>
-
-							<div class="popup-test-text-subtitle">
-							This album cover was made for a client who wanted a cover to represent their album. By only revealing half of the artist's face, it fits with the album's message and title, 'this time it's personal'.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-		<!-- print 6 -->
-
-		<a id="close-button-2-6">
-			<div class="wrapper" id="wrapper-2-6">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-6" src="img/print/small/6.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Design Culture Now Poster
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This poster was created for a class about Typography in which we were to create a poster for a theoretical event with a focus on typography and a combination between custom and premade fonts.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-		<!-- print 7 -->
-
-		<a id="close-button-2-7">
-			<div class="wrapper" id="wrapper-2-7">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-7" src="img/print/small/10.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Digital Illustration
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This piece was created during spare time and its main purpose, aside from creating an image, was to improve my masking, blending, and texture skills in Photoshop.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-		<!-- print 8 -->
-
-		<a id="close-button-2-8">
-			<div class="wrapper" id="wrapper-2-8">
-				<div class="popup-test" id="popup-test-2-8">
-					<div class="popup-test-container">
-
-						<div id="image-2-8-container" class="popup-test-image-container">
-							<img id="image-2-8" src="img/print/small/9.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-2-8">
-
-							<div class="popup-test-text-title">
-								Midnight - Digital Illustration
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This piece was created during spare time during my introduction to Illustrator. It's purpose, aside from simply creating an image, was to improve my abilities working with clipping masks and textures in Illustrator.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-		<!-- print 9 -->
-
-		<a id="close-button-2-9">
-			<div class="wrapper" id="wrapper-2-9">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-2-9">
-
-						<div class="popup-test-image-container" id="image-2-9-container">
-							<img id="image-2-9" src="img/print/small/11.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-2-9">
-
-							<div class="popup-test-text-title">
-								Biker - Digital Illustration
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This piece was created during spare time, and its purpose was to improve my ability to create complex shapes and images from scratch in Illustrator, as well as enhancing my general skills in Illustrator.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-		<!-- print 10 -->
-
-		<a id="close-button-2-10">
-			<div class="wrapper" id="wrapper-2-10">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-10" src="img/print/small/7.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Glass Slipper - Film Poster
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This poster was created for a film group that was creating a film entitled 'Glass Slipper'. The greatest difficulty but also greatest achievement in this process was creating a three dimensional aspect using only gradients. 
-							</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- print 11 -->
-
-		<a id="close-button-2-11">
-			<div class="wrapper" id="wrapper-2-11">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-11" src="img/print/small/12.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Cinema and the City - Poster
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This was created for a school project in which he had to create a poster that showcased words associated with cinema, and the city.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-		<!-- print 12 -->
-
-		<a id="close-button-2-12">
-			<div class="wrapper" id="wrapper-2-12">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-12" src="img/print/small/13.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Hopeless Romantic - Album Cover
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This album cover was created to be used as my personal album cover.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-		<!-- print 13 -->
-
-		<a id="close-button-2-13">
-			<div class="wrapper" id="wrapper-2-13">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-13" src="img/print/small/8.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Digital Illustration
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This was a fun digital illustration created during spare time. Its purpose was to provide practice creating artwork in Photoshop and Illustrator simultaneously, combining vector images and raster textures. Its secondary purpose was for practice in blending gradients.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-		<!-- print 14 -->
-
-		<a id="close-button-2-14">
-			<div class="wrapper" id="wrapper-2-14">
-				<div class="popup-test">
-					<div class="popup-test-container">
-
-						<div class="popup-test-image-container">
-							<img id="image-2-14" src="img/print/small/14.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Lowell George- Poster
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This poster was created for a class called 'Design and Image', and its purpose was to explore new ways of developing imagery and ideas for posters. After being assigned a song and musician, 48 images were to be developed of a single object that relates to the song. This step opened new possibilities for the final step, which was to create the final poster.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- web -->
-<!-- all web items are labelled with 4 and shirt items are labelled as 3 -->
-
-
-		<!-- web 1 (links back to source)-->
-
-		<!-- web 2 -->
-
-		<a>
-			<div class="wrapper" id="wrapper-4-2">
-				<div class="popup-test">
-					<div class="popup-test-container">
-						
-						<a id="close-button-4-2">
-						<div class="web-close-button">
-							X
-						</div>
-						</a>
-
-						<div class="popup-test-image-container" id="popup-test-image-container-4-2">
-							<img id="image-4-2" src="img/web/2.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-4-2">
-
-							<div class="popup-test-text-title">
-								<a class="website-link" href="https://camdendriedger.github.io/multiples/" target="_blank">Multiples</a> - Animated Website
-							</div>
-
-							<div class="popup-test-text-subtitle-4-2">
-								This website was created for a class called 'Materials and Methods for Design'. The objective of the project was to create mulitples of something in the form of traditional/digital art, video, or a website, and to follow a certain theme. This website follows the theme "Magic and Illusion"
-								</br>
-							While creating this website, I learned how to make organized and complex css transitions and animations. This website was created using only HTML and CSS and was <strong>only designed to work on chrome.</strong>
-								</br>
-								<a class="website-link" href="https://camdendriedger.github.io/multiples/" target="_blank">Click here</a> to visit the website.
-						</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-	
-
-
-
-<!-- web 3 -->
-
-		<a>
-			<div class="wrapper" id="wrapper-4-3">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-4-3">
-						
-						<a id="close-button-4-3">
-						<div class="web-close-button">
-							X
-						</div>
-						</a>
-
-						<div class="popup-test-image-container" id="popup-test-image-container-4-3">
-							<img id="image-4-3" src="img/web/3.png" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-4-3">
-
-							<div class="popup-test-text-title">
-								<a class="website-link" href="http://design.sheridanc.on.ca/~bd18w245/" target="_blank">Process Site</a>
-							</div>
-
-							<div class="popup-test-text-subtitle-4-3">
-								This website was created to contain every project and assignment for a course called 'Visual Interaction Design', an introductory course to web design and development. This website and its contents also show my progress in HTML, CSS, and web design, from when I was first introduced to HTML and css in January 2018 through March 2018.
-								</br>
-								<a class="website-link" href="http://design.sheridanc.on.ca/~bd18w245/" target="_blank">Click here</a> to visit the website.
-							</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-
-<!-- web 4 -->
-
-		<a>
-			<div class="wrapper" id="wrapper-4-4">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-4-4">
-						
-						<a id="close-button-4-4">
-						<div class="web-close-button">
-							X
-						</div>
-						</a>
-
-						<div class="popup-test-image-container" id="popup-test-image-container-4-4">
-							<img id="image-4-4" src="img/web/4.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-4-3">
-
-							<div class="popup-test-text-title">
-								<a class="website-link" href="https://camdendriedger.github.io/achanceintime/" target="_blank">A Chance In Time</a>
-							</div>
-
-							<div class="popup-test-text-subtitle-4-4">
-								This website was created and devoted for a print project which was created for a class called Materials and Methods. More about the project itself can be found on the website.
-								</br>
-								<a class="website-link" href="https://camdendriedger.github.io/achanceintime/" target="_blank">Click here</a> to visit the website.
-							</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- shirt -->
-		<!-- all web items are labelled with 4 and shirt items are labelled as 3 -->
-
-
-		<!-- shirt 1 -->
-
-		<a id="close-button-3-1">
-			<div class="wrapper" id="wrapper-3-1">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-3-1">
-
-						<div class="popup-test-image-container">
-							<img id="image-3-1" src="img/shirt/small/1.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								30 Hour Famine Tshirt
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This t-shirt belongs to the branding collection of the 30 Hour Famine. It was designed to be simple and appearance, but also attractive enough for participants to want to wear it and advertise the event.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-		<!-- shirt 2 -->
-
-		<a id="close-button-3-2">
-			<div class="wrapper" id="wrapper-3-2">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-3-2">
-
-						<div class="popup-test-image-container">
-							<img id="image-3-2" src="img/shirt/small/2.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text">
-
-							<div class="popup-test-text-title">
-								Witness - MSC Choral Festival Tshirt
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This shirt belongs in the branding collection of the 2018 MSC Choral Festival.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- shirt 3 -->
-
-		<a id="close-button-3-3">
-			<div class="wrapper" id="wrapper-3-3">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-3-3">
-
-						<div class="popup-test-image-container" id="popup-test-image-container-3-3">
-							<img id="image-3-3" src="img/shirt/small/3.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-3-3">
-
-							<div class="popup-test-text-title">
-								UMEI Christian High School Tshirt
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								This Tshirt is apart of the Tshirt series for UMEI Christian High School. The objective of this shirt, as requested, was to represent things that make up UMEI Christian High School, and to be attractive enough that students would want to wear it. The icons used were determined through a school wide survey.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- shirt 4 -->
-
-		<a id="close-button-3-4">
-			<div class="wrapper" id="wrapper-3-4">
-				<div class="popup-test">
-					<div class="popup-test-container" id="popup-test-container-3-4">
-
-						<div class="popup-test-image-container" id="popup-test-image-container-3-4">
-							<img id="image-3-4" src="img/shirt/small/4.jpg" class="popup-test-image">
-						</div>
-
-						<div class="popup-test-text" id="popup-test-text-3-4">
-
-							<div class="popup-test-text-title">
-								UMEI Christian High School Tshirt
-							</div>
-
-							<div class="popup-test-text-subtitle">
-								UMEI had Tshirts that students could wear, but they were uninteresting and students had no interest in them. As a result, I was asked to design a series of tshirts that would sport the school name, and that students would enjoy wearing. Many students now proudly wear this tshirt to represent their school.</div>
-
-							<div class="popup-test-text-fine">
-								&#169; Camden Driedger 2018</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-
-
-
-		<!-- photo -->
-
-		
-
-		<!--
-
-		<!-- photo 1 
-
-		<a id="close-button-5-1">
-			<div class="wrapper" id="wrapper-5-1">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-1" src="img/photo/3.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-		<!-- photo 2 
-
-		<a id="close-button-5-2">
-			<div class="wrapper" id="wrapper-5-2">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-2" src="img/photo/2.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- photo 3 
-
-		<a id="close-button-5-3">
-			<div class="wrapper" id="wrapper-5-3">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-3" src="img/photo/8.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-		<!-- photo 4 
-
-		<a id="close-button-5-4">
-			<div class="wrapper" id="wrapper-5-4">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-4" src="img/photo/4.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- photo 5 
-
-		<a id="close-button-5-5">
-			<div class="wrapper" id="wrapper-5-5">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-5" src="img/photo/1.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-		<!-- photo 6 
-
-		<a id="close-button-5-6">
-			<div class="wrapper" id="wrapper-5-6">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-6" src="img/photo/5.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-
-		<!-- photo 7 
-
-		<a id="close-button-5-7">
-			<div class="wrapper" id="wrapper-5-7">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-7" src="img/photo/6.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-		<!-- photo 8 
-
-		<a id="close-button-5-8">
-			<div class="wrapper" id="wrapper-5-8">
-				<div class="popup-test">
-					<div class="popup-test-container-5-8">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-8" src="img/photo/7.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
-
-		<!-- photo 9 
-
-		<a id="close-button-5-9">
-			<div class="wrapper" id="wrapper-5-9">
-				<div class="popup-test">
-					<div class="popup-test-container-5">
-
-						<div class="popup-test-image-container-5">
-							<img id="image-5-9" src="img/photo/9.jpg" class="popup-test-image-5">
-						</div>
-
-
-					</div>
-
-				</div>
-			</div>
-		</a>
-
--->
-
-
-
-
-
-
-
-
-		<!--
 <script>
 
 
 
-    $(document).ready(function(){
 
 
-//branding 1
 
 
-        $('#logo1js').click(function() {
-    $('#wrapper-1-1').toggle();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".secondary-nav").addClass("change");
+    } else {
+        $(".secondary-nav").removeClass("change");
+    }
 });
 
-        $('#close-button-1-1').click(function() {
-    $('#wrapper-1-1').toggle();
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".secondary-nav-item").addClass("change");
+				$(".secondary-nav-item").removeClass("unchange");
+    } else {
+        $(".secondary-nav-item").removeClass("change");
+				$(".secondary-nav-item").addClass("unchange");
+    }
 });
 
-
-//branding 2
-
-
-   $('#logo2js').click(function() {
-    $('#wrapper-1-2').toggle();
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".stabs-nav li.tab-active").addClass("change");
+    } else {
+        $(".stabs-nav li.tab-active").removeClass("change");
+    }
 });
 
-        $('#close-button-1-2').click(function() {
-    $('#wrapper-1-2').toggle();
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header.desktop.portfolio .logo.container").addClass("change");
+    } else {
+        $(".header.desktop.portfolio .logo.container").removeClass("change");
+    }
 });
 
-
-
-
-//branding 3
-
-
-        $('#logo3js').click(function() {
-    $('#wrapper-1-3').toggle();
-});
-
-        $('#close-button-1-3').click(function() {
-    $('#wrapper-1-3').toggle();
-});
-
-
-//branding 4
-
-
-   $('#logo4js').click(function() {
-    $('#wrapper-1-4').toggle();
-});
-
-        $('#close-button-1-4').click(function() {
-    $('#wrapper-1-4').toggle();
-});
-
-
-
-
-//branding 5
-
-
-        $('#logo5js').click(function() {
-    $('#wrapper-1-5').toggle();
-});
-
-        $('#close-button-1-5').click(function() {
-    $('#wrapper-1-5').toggle();
-});
-
-
-
-//branding 6
-
-
-   $('#logo6js').click(function() {
-    $('#wrapper-1-6').toggle();
-});
-
-        $('#close-button-1-6').click(function() {
-    $('#wrapper-1-6').toggle();
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header.desktop.portfolio .logo.image").addClass("change");
+    } else {
+        $(".header.desktop.portfolio .logo.image").removeClass("change");
+    }
 });
 
 
 
 
-//branding 7
+// Show the first tab by default
+$('.tabs-stage div').hide();
+$('.tabs-stage div:first').show();
+$('.tabs-nav li:first').addClass('tab-active');
 
-
-   $('#logo7js').click(function() {
-    $('#wrapper-1-7').toggle();
+// Change tab class and display content
+$('.tabs-nav a').on('click', function(event){
+  event.preventDefault();
+  $('.tabs-nav li').removeClass('tab-active');
+  $(this).parent().addClass('tab-active');
+  $('.tabs-stage div').hide();
+  $($(this).attr('href')).show();
 });
 
-        $('#close-button-1-7').click(function() {
-    $('#wrapper-1-7').toggle();
+// print tab
+$('.nav-item-print').on('click', function(event){
+  event.preventDefault();
+  $('.grid-container').removeClass('display-none');
+	$('.grid-container').removeClass('display-flex');
 });
 
-
-
-
-//branding 8
-
-
-   $('#logo8js').click(function() {
-    $('#wrapper-1-8').toggle();
-});
-
-        $('#close-button-1-8').click(function() {
-    $('#wrapper-1-8').toggle();
-});
-
-
-
-
-
-//branding 9
-
-
-   $('#logo9js').click(function() {
-    $('#wrapper-1-9').toggle();
-});
-
-        $('#close-button-1-9').click(function() {
-    $('#wrapper-1-9').toggle();
+$('.print-close-button').on('click', function(event){
+  event.preventDefault();
+  $('.grid-container').addClass('display-none');
+	$('.grid-container').removeClass('display-flex');
 });
 
 
@@ -2066,53 +1021,197 @@
 
 
 
+//mobile only
 
+$(".mobile-nav-button").on("click", function() {
 
+    $(".sidebar-container").toggleClass("extend");
 
+		$(".sidebar-mobile").toggleClass("extend");
 
+		$(".header-logo-container-mobile").toggleClass("extend");
 
-
-
-
-
-
-
-
-        //window.onresize = function(){ location.reload(); }
-
-        if ( $(window).outerWidth() > 644) {
-  //Add your javascript for large screens here
-}
-else {
-   $('#menu-button').click(function() {
-    $('.nav').toggle();
 })
 
 
-        $('.nav-list-item-link').click(function() {
-    $('.nav').toggle();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+
+
+   setHeight($('.parallax'), $('.about'));
+
+    $(window).on(resize, function() {
+      setHeight($('.parallax'), $('.about'));
+    });
+
 });
 
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".header-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".logo-top").addClass("logo-top-animation");
+				$(".hamburger").addClass("hamburgerhello");
+    } else {
+        $(".logo-top").removeClass("logo-top-animation");
+				$(".hamburger").removeClass("hamburgerhello");
+    }
+});
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".profile-image");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header-bar").addClass("present");
+    } else {
+				$(".header-bar").removeClass("present");
+    }
+});
+
+
+
+$(window).scroll(function() {
+
+    //After scrolling 100px from the top...
+    if ( $(window).scrollTop() >= 1 ) {
+        $('.scroll').css('opacity', '0');
+				$('.scroll').css('margin-top', '100px');
+
+    //Otherwise remove inline styles and thereby revert to original stying
+    } else {
+
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+$.fn.moveIt = function(){
+   var $window = $(window);
+   var instances = [];
+$(this).each(function(){
+   instances.push(new moveItItem($(this)));
+});
+window.onscroll = function(){
+   var scrollTop = $window.scrollTop();
+  instances.forEach(function(inst){
+     inst.update(scrollTop);
+     });
+   }
 }
 
+var moveItItem = function(el){
+   this.el = $(el);
+   this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+   this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+
+// Initialization
+$(function(){
+   $('[data-scroll-speed]').moveIt();
+});
 
 
-        });
-
-    </script>
--->
 
 
 
-		<!--
+
+// Open the Modal
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+		// Close the Modal
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			captionText.innerHTML = dots[slideIndex - 1].alt;
+		}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+
+
+</body>
+
+<!--
 <script>
-function toggle_visibility(id) {
-   var e = document.getElementById(id);
-   if(e.style.display == 'block')
-      e.style.display = 'none';
-   else
-      e.style.display = 'block';
-}
+
+	var rellax = new Rellax('.rellax', {
+	callback: function(position) {
+	}
+	});
+
 </script>
 -->
 
@@ -2121,109 +1220,8 @@ function toggle_visibility(id) {
 
 
 
-		<!--
-        <div class="logo" class="grid-item" id="1">1</div>
-        <div class="logo" class="grid-item" id="2">2</div>
-        <div class="logo" class="grid-item" id="3">3</div>
-        <div class="logo" class="grid-item" id="4">4</div>
-        <div class="logo" class="grid-item" id="5">5</div>
-        <div class="logo" class="grid-item" id="6">6</div>
-        <div class="logo" class="grid-item" id="7">7</div>
-        <div class="logo" class="grid-item" id="8">8</div>
-        <div class="logo" class="grid-item" id="9">9</div>
-        <div class="logo" class="grid-item" id="10">10</div>
-        <div class="logo" class="grid-item" id="11">11</div>
-        <div class="logo" class="grid-item" id="12">12</div>
-        <div class="logo" class="grid-item" id="13">13</div>
-        <div class="logo" class="grid-item" id="14">14</div>
-        <div class="logo" class="grid-item" id="15">15</div>
-        <div class="logo" class="grid-item" id="16">16</div>
-        <div class="logo" class="grid-item" id="17">17</div>
-        <div class="logo" class="grid-item" id="18">18</div>
-        <div class="logo" class="grid-item" id="19">19</div>
-        <div class="logo" class="grid-item" id="20">20</div>
-        <div class="logo" class="grid-item" id="21">21</div>
-        -->
-
-		<!--
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">10</div>
-        <div class="grid-item">11</div>
-        <div class="grid-item">12</div>
-        <div class="grid-item">13</div>
-        <div class="grid-item">14</div>
-        <div class="grid-item">15</div>
-        <div class="grid-item">16</div>
-        <div class="grid-item">17</div>
-        <div class="grid-item">18</div>
-        <div class="grid-item">19</div>
-        <div class="grid-item">20</div>
-        <div class="grid-item">21</div>
-        -->
 
 
 
 
-
-
-
-
-
-		<script>
-			$(document).ready(function() {
-				$(document).on("scroll", onScroll);
-
-				//smoothscroll
-				$('a[href^="#"]').on('click', function(e) {
-					e.preventDefault();
-					$(document).off("scroll");
-
-					$('a').each(function() {
-						$(this).removeClass('active');
-					})
-					$(this).addClass('active');
-
-					var target = this.hash,
-						menu = target;
-					$target = $(target);
-					$('html, body').stop().animate({
-						'scrollTop': $target.offset().top + 2
-					}, 500, 'swing', function() {
-						window.location.hash = target;
-						$(document).on("scroll", onScroll);
-					});
-				});
-			});
-
-			function onScroll(event) {
-				var scrollPos = $(document).scrollTop();
-				$('#nav-center a').each(function() {
-					var currLink = $(this);
-					var refElement = $(currLink.attr("href"));
-					if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-						$('#nav-center ul li a').removeClass("active");
-						currLink.addClass("active");
-					} else {
-						currLink.removeClass("active");
-					}
-				});
-			}
-
-		</script>
-
-
-
-
-
-
-
-
-	</body>
-
-	</html>
+</html>
