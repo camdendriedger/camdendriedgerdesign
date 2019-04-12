@@ -104,7 +104,7 @@
 <header class="header desktop one">
 
 	<div class="sidebar-container desktop">
-	<div class="sidebar desktop">
+	<div class="sidebar desktop" style="--sidebar-color: #D1341B">
 		<nav class="nav side text desktop">
 			<a class="item desktop" href="index.html#about">About</a>
 			<a class="item desktop" href="portfolio.html">Work</a>
@@ -142,7 +142,7 @@
 	</div>
 
 	<div class="sidebar-container sidebar-container-mobile mobile-nav-button">
-	<div class="sidebar sidebar-mobile">
+	<div class="sidebar sidebar-mobile" style="--sidebar-color: #D1341B">
 		<div class="close-button mobile">
 			<svg class="close-button-svg mobile" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 9 9"
 			<style type="text/css">
@@ -246,10 +246,22 @@
 
 
 
-	<form method="POST" action="https://formspree.io/camden@driedger.design">
-	  <input type="email" name="email" placeholder="Your email">
-	  <textarea name="message" placeholder="Test Message"></textarea>
-	  <button type="submit">Send Test</button>
+	<form class="contact-form" method="POST" action="https://formspree.io/camden@driedger.design">
+
+		<div class="row info input">
+			<input class="input name" type="name" name="name" placeholder="Your name">
+
+			<input class="input email" type="email" name="email" placeholder="Your email">
+		</div>
+
+		<div class="row message input">
+			<textarea class="input message" name="message" placeholder="Test Message"></textarea>
+		</div>
+
+		<div class="row submit">
+			<button class="input sumbit" type="submit">Send Message</button>
+		</div>
+
 	</form>
 
 

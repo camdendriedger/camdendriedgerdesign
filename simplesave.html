@@ -1,0 +1,1014 @@
+<!doctype html>
+
+
+<html>
+
+
+
+<head>
+
+    <meta chartset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Simple Save</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">
+
+		<title>
+		Camden Driedger Design
+		</title>
+
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('.nav-tabs > li > a').click(function(event){
+					event.preventDefault();//stop browser to take action for clicked anchor
+
+					//get displaying tab content jQuery selector
+					var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+					//find actived navigation and remove 'active' css
+					var actived_nav = $('.nav-tabs > li.active');
+					actived_nav.removeClass('active');
+
+					//add 'active' css into clicked navigation
+					$(this).parents('li').addClass('active');
+
+					//hide displaying tab content
+					$(active_tab_selector).removeClass('active');
+					$(active_tab_selector).addClass('hide');
+
+					//show target tab content
+					var target_tab_selector = $(this).attr('href');
+					$(target_tab_selector).removeClass('hide');
+					$(target_tab_selector).addClass('active');
+				});
+			});
+		</script>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<div class="main-content">
+
+
+<header class="header desktop one portfolio">
+
+	<div class="sidebar-container desktop">
+	<div class="sidebar desktop" style="--sidebar-color: #46887A">
+		<nav class="nav side text desktop">
+			<a class="item desktop" href="index.html#about">About</a>
+			<a class="item desktop" href="portfolio.html">Work</a>
+			<a class="item desktop" href="contact.html">Contact</a>
+		</br>
+		</br>
+		<a class="item desktop" href="index.html">Home</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="logo container desktop header-logo-container">
+
+		<svg class="logo image logo-top" viewBox="0 0 6.9 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M6.4.5v8.2H4.6C2.3 8.7.5 6.9.5 4.6S2.3.5 4.6.5v1.8c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+		<svg class="logo image hamburger" viewBox="0 0 9.8 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M0,0.5h9.8 M0,4.6h9.8 M0,8.7h9.8" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+	</div>
+
+</header>
+
+
+
+
+
+<header class="header mobile one">
+
+	<div class="header-bar">
+	</div>
+
+	<div class="sidebar-container sidebar-container-mobile mobile-nav-button">
+	<div class="sidebar sidebar-mobile">
+		<div class="close-button mobile">
+			<svg class="close-button-svg mobile" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 9 9"
+			<style type="text/css">
+				.st0{fill:none;stroke:#F7F1EB;stroke-miterlimit:10;}
+			</style>
+			<defs>
+			</defs>
+			<line class="st0" x1="0.4" y1="8.6" x2="8.6" y2="0.4"/>
+			<line class="st0" x1="0.4" y1="0.4" x2="8.6" y2="8.6"/>
+			</svg>
+		</div>
+		<nav class="nav side text mobile">
+			<a class="item mobile" href="index.html#about">About</a>
+			<a class="item mobile" href="portfolio.html">Work</a>
+			<a class="item mobile" href="contact.html">Contact</a>
+		</br>
+		</br>
+		<a class="item mobile" href="index.html">Home</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="logo container header-logo-container-mobile header-logo-container">
+
+		<svg class="logo image logo-top" viewBox="0 0 6.9 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M6.4.5v8.2H4.6C2.3 8.7.5 6.9.5 4.6S2.3.5 4.6.5v1.8c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+		<svg class="logo image hamburger" viewBox="0 0 9.8 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M0,0.5h9.8 M0,4.6h9.8 M0,8.7h9.8" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+	</div>
+
+</header>
+
+
+<header class="header two header-two">
+
+	<nav class="nav top text">
+		<a class="item" href="index.html#about">About</a>
+		<a class="item" href="portfolio.html">Portfolio</a>
+		<a class="item" href="contact.html">Contact</a>
+	</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<div class="banner">
+
+	<div class="title" data-scroll-speed="-3">
+		SIMPLE SAVE
+	</div>
+
+	<div class="banner-marker">
+	</div>
+	<div class="banner-marker-two">
+	</div>
+	<div class="banner-background">
+
+		<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In  -->
+		<svg class="banner-background-svg" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 1919.7 513">
+		<style type="text/css">
+			.st0{fill:url(#SVGID_1_);}
+			.st1{fill:url(#SVGID_2_);}
+			.st2{fill:url(#SVGID_3_);}
+			.st3{fill:url(#SVGID_4_);}
+			.st4{fill:url(#SVGID_5_);}
+			.st5{fill:url(#SVGID_6_);}
+			.st6{fill:url(#SVGID_7_);}
+			.st7{fill:url(#SVGID_8_);}
+		</style>
+		<defs>
+		</defs>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="315.4788" y1="652.1793" x2="2114.0691" y2="-452.2183">
+				<stop  offset="0" style="stop-color:#46887A"/>
+				<stop  offset="1" style="stop-color:#8DC9B9"/>
+			</linearGradient>
+			<path data-scroll-speed="-1" class="st0 one" d="M1919.7,513H0V0h1919.7V513z"/>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="579.7902" y1="747.0555" x2="2193.5137" y2="-243.8274">
+				<stop  offset="0" style="stop-color:#46887A"/>
+				<stop  offset="1" style="stop-color:#8DC9B9"/>
+			</linearGradient>
+			<path data-scroll-speed="-2" class="st1 two" d="M229.7,513c0,0-52.6-267,399.5-267C887,246,906.8,0,906.8,0h1013v513H229.7z"/>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="743.5244" y1="723.9393" x2="2250.6965" y2="-201.5174">
+				<stop  offset="0" style="stop-color:#46887A"/>
+				<stop  offset="1" style="stop-color:#8DC9B9"/>
+			</linearGradient>
+			<path data-scroll-speed="-5" class="st2 three" d="M362.1,513c0,0-30.1-165.1,387.3-176.9C1250.3,321.8,1373,0,1373,0h546.7v513H362.1z"/>
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="983.9288" y1="724.069" x2="2302.5444" y2="-85.6073">
+				<stop  offset="0" style="stop-color:#46887A"/>
+				<stop  offset="1" style="stop-color:#8DC9B9"/>
+			</linearGradient>
+			<path data-scroll-speed="-10" class="st3" d="M752.3,513c0,0,314.4-266.2,713.2-266.2c453.2,0,454.3-191.8,454.3-191.8v283.3V513H752.3z"/>
+		</g>
+		</svg>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="secondary-nav" style="--topbar-color: #46887A;">
+
+
+<!--
+<a href="portfolio.html#tab1" class="item text">Back</a>
+-->
+
+	<!--
+	<ul class="nav nav-tabs items-container">
+		<li class="active">
+			<a href="portfolio.html#tab1" class="item secondary-nav-item text print-close-button">Featured</a>
+		</li>
+	</br>
+		<li>
+			<a href="portfolio.html#tab2" class="item secondary-nav-item text print-close-button">Branding</a>
+		</li>
+		<li>
+			<a href="portfolio.html#tab3" class="item secondary-nav-item nav-item-print text">Print</a>
+		</li>
+		<li>
+			<a href="portfolio.html#tab4" class="item secondary-nav-item text print-close-button">Interaction</a>
+		</li>
+	</ul>
+-->
+</div>
+
+
+
+
+
+
+<div class="project-content simplesave">
+
+	<div class="text-container">
+
+		<div class="info item">
+
+			<div class="item_">
+				<div class="title">
+					Category
+				</div>
+
+				<div class="body">
+					UI/UX, Visual Design
+				</div>
+			</div>
+
+			<div class="item_">
+				<div class="title">
+					Date
+				</div>
+
+				<div class="body">
+					December 2018
+				</div>
+			</div>
+
+			<div class="item_">
+				<div class="title">
+					Tools
+				</div>
+
+				<div class="body">
+					XD, Illustrator
+				</div>
+			</div>
+
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				The Project
+			</div>
+			<div class="body">
+				I was assigned the task of designing a banking app that would fit the needs of a particular audience. It would address the issues in other banking apps that the target audience would experience, and would offer relevant solutions.
+			</div>
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				The Problem
+			</div>
+			<div class="body">
+				Most students and younger adults, like myself, use a banking app. When I began brainstorming ideas for a new app, I was stumped when it occurred to me that I knew nothing about banking. After consulting friends and colleagues, it was obvious that I was not alone. It turns out there is a large population that only actually uses their banking app for three things - checking balances, sending E-transfers and occasionally making payments.
+			</div>
+			<div class="body">
+				While other banking apps offer these features, there are countless other features that a lot of users are afraid to even open, making the already daunting task of personal banking far more stressful than it needs to be.
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="image-container one opener">
+		<img data-scroll-speed="-5" src="img/projects/simplesave/1.png" class="image one"/>
+	</div>
+
+
+	<div class="text-container">
+
+		<div class="block item">
+			<div class="title">
+				Money can be easy again!
+			</div>
+			<div class="body">
+				The goal of Simple Save was to create a banking app that is simple, straightforward, and appeals to someone with minimal banking needs and knowledge.
+			</div>
+			<div class="body">
+				In addition to the features you need, there are unique tools designed to aid users manage and budget their money easier.
+			</div>
+		</div>
+
+	</div>
+
+	<!-- <div class="text-container secondary row" style="--secondary-color: #9CD2C7;">
+
+
+		<div class="images-container">
+			<img src="img/projects/simplesave/3.jpg" class="image"/>
+			<img src="img/projects/simplesave/2.jpg" class="image"/>
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				Money can be easy again!
+			</div>
+			<div class="body">
+				The goal of Simple Save was to create a banking app that is simple, straightforward, and appeals to someone with minimal banking needs and knowledge.
+			</div>
+			<div class="body">
+				In addition to the features you need, there are unique tools designed to aid users manage and budget their money easier.
+			</div>
+		</div>
+
+	</div>-->
+
+	<div class="text-container secondary row" style="--secondary-color: #9CD2C7;">
+
+		<div class="secondary-container">
+
+			<div class="row">
+				<div class="image-container">
+					<img src="img/projects/simplesave/3.jpg" class="image"/>
+				</div>
+
+				<div class="block item">
+					<div class="title">
+						Budgeting, but better
+					</div>
+					<div class="body">
+						The goal of Simple Save was to create a banking app that is simple, straightforward, and appeals to someone with minimal banking needs and knowledge.
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="image-container">
+					<img src="img/projects/simplesave/2.jpg" class="image"/>
+				</div>
+
+				<div class="block item">
+					<div class="title">
+						Active Feedback
+					</div>
+					<div class="body">
+						In addition to the features you need, there are unique tools designed to aid users manage and budget their money easier.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="video-container secondary-two full" style="--secondary-color-2: rgba(0,0,0,0);">
+
+					<video class="video" controls>
+  					<source src="img/projects/simplesave/video.mp4" type="video/mp4">
+					</video>
+
+					<div class="block item">
+						<div class="title">
+							Video Walkthrough
+						</div>
+						<div class="body">
+							Watch an interactive walkthrough showcasing Simple Save's unique features and its new approach to online banking.
+						</div>
+					</div>
+
+	</div>
+
+
+
+
+	<div class="text-container secondary row" style="--secondary-color: #9CD2C7;">
+		<div class="headline single">
+			The Process!
+		</div>
+	</div>
+
+	<div class="text-container subhead">
+		The Main Problem
+	</div>
+
+	<div class="text-container column">
+
+		<div class="width-container">
+
+		<div class="block item">
+			<div class="title">
+				A note to self - I don't know hot to bank
+			</div>
+			<div class="body">
+				Banking is an incredibly complicated thing that I have no understaning of outside of account balances and transfering funds.
+			</div>
+			<div class="body">
+				All I use my banking app for is checking my account balance, etransfer, and occasionaly depositing cheques from work.
+			</div>
+			<div class="body">
+				I, like many other students my age, only use a banking app to do those basic tasks. People like us need a banking app that doesn’t have all those extra features that banks have to offer.
+			</div>
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				Also, students are poor
+			</div>
+			<div class="body">
+				Like myself, many students are very poor; on the verge of broke. We could benefit from:
+				<ul class="dashed">
+					<li>
+						Notification when account balance dips below certain level
+					</li>
+					<li>
+						Notify when sending an etransfer would put account balance
+						below that level
+					</li>
+					<li>
+						Notify when spent over a daily limit
+					</li>
+					<li>
+						ATM Locator
+					</li>
+					<li>
+						Show private information by default (account balance can be
+						embarassing!)
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="text-container column">
+
+		<div class="width-container">
+
+		<div class="block item">
+			<div class="title">
+				The Target Audience
+			</div>
+			<div class="body">
+				Banking is an incredibly complicated thing that I have no understaning of outside of account balances and transfering funds.
+			</div>
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				Activities this group uses banking apps for
+			</div>
+			<div class="body">
+				Checking account balances, using etransfer, depositing cheques, tracking spending. That’s really all.
+			</div>
+			<div class="body">
+				Tracking spending is or can be a daily activity, checking account balances and sending etrasnfers are less frequently but still often, and depositing cheques is ocassionaly.
+			</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+	<div class="text-container subhead">
+		User Scenarios
+	</div>
+
+	<div class="text-container column">
+
+		<div class="width-container">
+
+		<div class="block item">
+			<div class="title">
+				Camden (myself)
+			</div>
+			<div class="body">
+				I am 19 years old, and a full time student. I am good with apps and have a good understanding of how apps work but I have no idea how banking works. My knowledge of banking is limited to account balances, etrasnfers, and depositing cheques. I use my banking app regularly but only use about 10% of the app. I’m broke and don’t have enough money to even be able to use half of the functions my banking app has. Because I’m also a full time student and never have time to go to the bank. I have trouble watching my spending and often have to check my balance to see if I have enough money. I also want a banking app that allows me to use it around friends without worrying about them seeing my balance or other private information.
+			</div>
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				Alex
+			</div>
+			<div class="body">
+				Alex is a 20 year old student and part time worker. Alex, like me, is also poor and has to regularly check her account balance before making any degree of financial decisions. Alex only uses her banking app to check her balance and send / receive etransfers. Alex wishes her banking app would notify her when her balance reaches a certain level, and that there was a better way to track her daily spending.
+			</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="text-container row-quarters">
+
+		<div class="caption">
+			<div class="highlight">Scenario</div> Alex needs to budget for her rent, she has payments coming up soon.
+		</div>
+
+		<div class="width-container">
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us1.png"/>
+			<div class="body">
+				Alex accesses the budget accounts section under budgeting, where she can see her existing budget accounts and balances.
+			</div>
+		</div>
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us2.png"/>
+			<div class="body">
+				She hits the plus button to add a new budget account. Now she is at the editing screen for a new budget account.
+			</div>
+		</div>
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us3.png"/>
+			<div class="body">
+				Alex is presented with the option of naming her new budget account, assigning a percentage to it, and whether or not she wants to include it in budget depositing.
+			</div>
+		</div>
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us4.png"/>
+			<div class="body">
+				Alex names the account ‘Rent’, and dedicates 20% of her overall account to it. Now she is ready to start saving for her upcoming rent payments!
+			</div>
+		</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="text-container row-quarters">
+
+		<div class="caption">
+			<div class="highlight">Scenario</div>Camden needs to send an E-Transfer, but is unsure how much he can safely send.
+		</div>
+
+		<div class="width-container">
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us5.png"/>
+			<div class="body">
+				After accessing selecting a contact from the E-Transfer page, he is presented with the E-Transfer details to fill out.
+			</div>
+		</div>
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us6.png"/>
+			<div class="body">
+				After entering an ammount too high, the amount goes red to show he does not have enough.
+			</div>
+		</div>
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us7.png"/>
+			<div class="body">
+				After changing the amount, he is shown that he has enough funds, but may cause future issues with upcoming payments.
+			</div>
+		</div>
+
+		<div class="block item">
+			<img src="img/projects/simplesave/us8.png"/>
+			<div class="body">
+				After reducing the amount, he is shown that he has in the clear!
+			</div>
+		</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="text-container subhead">
+		Flowchart
+	</div>
+
+<div class="image-container full">
+	<img src="img/projects/simplesave/flowchart.png" />
+</div>
+
+
+<div class="text-container subhead">
+	Wireframes
+</div>
+
+<div class="text-container row-quarters">
+
+	<div class="width-container">
+
+	<div class="block item">
+		<img src="img/projects/simplesave/wireframes/1.png"/>
+	</div>
+
+	<div class="block item">
+		<img src="img/projects/simplesave/wireframes/2.png"/>
+	</div>
+
+	<div class="block item">
+		<img src="img/projects/simplesave/wireframes/3.png"/>
+	</div>
+
+	<div class="block item">
+		<img src="img/projects/simplesave/wireframes/4.png"/>
+	</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="return-button-container">
+	<a href="portfolio.html" class="return-button">
+		Return to portfoio
+	</a>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".secondary-nav").addClass("change");
+    } else {
+        $(".secondary-nav").removeClass("change");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".secondary-nav-item").addClass("change");
+				$(".secondary-nav-item").removeClass("unchange");
+    } else {
+        $(".secondary-nav-item").removeClass("change");
+				$(".secondary-nav-item").addClass("unchange");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".stabs-nav li.tab-active").addClass("change");
+    } else {
+        $(".stabs-nav li.tab-active").removeClass("change");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header.desktop.portfolio .logo.container").addClass("change");
+    } else {
+        $(".header.desktop.portfolio .logo.container").removeClass("change");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header.desktop.portfolio .logo.image").addClass("change");
+    } else {
+        $(".header.desktop.portfolio .logo.image").removeClass("change");
+    }
+});
+
+
+
+
+// Show the first tab by default
+$('.tabs-stage div').hide();
+$('.tabs-stage div:first').show();
+$('.tabs-nav li:first').addClass('tab-active');
+
+// Change tab class and display content
+$('.tabs-nav a').on('click', function(event){
+  event.preventDefault();
+  $('.tabs-nav li').removeClass('tab-active');
+  $(this).parent().addClass('tab-active');
+  $('.tabs-stage div').hide();
+  $($(this).attr('href')).show();
+});
+
+// print tab
+$('.nav-item-print').on('click', function(event){
+  event.preventDefault();
+  $('.grid-container').removeClass('display-none');
+	$('.grid-container').removeClass('display-flex');
+});
+
+$('.print-close-button').on('click', function(event){
+  event.preventDefault();
+  $('.grid-container').addClass('display-none');
+	$('.grid-container').removeClass('display-flex');
+});
+
+
+
+
+
+
+//mobile only
+
+$(".mobile-nav-button").on("click", function() {
+
+    $(".sidebar-container").toggleClass("extend");
+
+		$(".sidebar-mobile").toggleClass("extend");
+
+		$(".header-logo-container-mobile").toggleClass("extend");
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+
+
+   setHeight($('.parallax'), $('.about'));
+
+    $(window).on(resize, function() {
+      setHeight($('.parallax'), $('.about'));
+    });
+
+});
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".header-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".logo-top").addClass("logo-top-animation");
+				$(".hamburger").addClass("hamburgerhello");
+    } else {
+        $(".logo-top").removeClass("logo-top-animation");
+				$(".hamburger").removeClass("hamburgerhello");
+    }
+});
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".profile-image");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header-bar").addClass("present");
+    } else {
+				$(".header-bar").removeClass("present");
+    }
+});
+
+
+
+$(window).scroll(function() {
+
+    //After scrolling 100px from the top...
+    if ( $(window).scrollTop() >= 1 ) {
+        $('.scroll').css('opacity', '0');
+				$('.scroll').css('margin-top', '100px');
+
+    //Otherwise remove inline styles and thereby revert to original stying
+    } else {
+
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+$.fn.moveIt = function(){
+   var $window = $(window);
+   var instances = [];
+$(this).each(function(){
+   instances.push(new moveItItem($(this)));
+});
+window.onscroll = function(){
+   var scrollTop = $window.scrollTop();
+  instances.forEach(function(inst){
+     inst.update(scrollTop);
+     });
+   }
+}
+
+var moveItItem = function(el){
+   this.el = $(el);
+   this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+   this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+
+// Initialization
+$(function(){
+   $('[data-scroll-speed]').moveIt();
+});
+
+
+
+
+
+
+// Open the Modal
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+		// Close the Modal
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			captionText.innerHTML = dots[slideIndex - 1].alt;
+		}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+
+
+</body>
+
+<!--
+<script>
+
+	var rellax = new Rellax('.rellax', {
+	callback: function(position) {
+	}
+	});
+
+</script>
+-->
+
+
+
+
+
+
+
+
+
+
+</html>

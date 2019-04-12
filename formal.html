@@ -1,0 +1,876 @@
+<!doctype html>
+
+
+<html>
+
+
+
+<head>
+
+    <meta chartset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formal in CMYK</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">
+
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('.nav-tabs > li > a').click(function(event){
+					event.preventDefault();//stop browser to take action for clicked anchor
+
+					//get displaying tab content jQuery selector
+					var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+					//find actived navigation and remove 'active' css
+					var actived_nav = $('.nav-tabs > li.active');
+					actived_nav.removeClass('active');
+
+					//add 'active' css into clicked navigation
+					$(this).parents('li').addClass('active');
+
+					//hide displaying tab content
+					$(active_tab_selector).removeClass('active');
+					$(active_tab_selector).addClass('hide');
+
+					//show target tab content
+					var target_tab_selector = $(this).attr('href');
+					$(target_tab_selector).removeClass('hide');
+					$(target_tab_selector).addClass('active');
+				});
+			});
+		</script>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<div class="main-content">
+
+
+<header class="header desktop one portfolio">
+
+	<div class="sidebar-container desktop">
+	<div class="sidebar desktop" style="--sidebar-color: #2A2A2A;">
+		<nav class="nav side text desktop">
+			<a class="item desktop" href="index.html#about">About</a>
+			<a class="item desktop" href="portfolio.html">Work</a>
+			<a class="item desktop" href="contact.html">Contact</a>
+		</br>
+		</br>
+		<a class="item desktop" href="index.html">Home</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="logo container desktop header-logo-container">
+
+		<svg class="logo image logo-top" viewBox="0 0 6.9 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M6.4.5v8.2H4.6C2.3 8.7.5 6.9.5 4.6S2.3.5 4.6.5v1.8c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+		<svg class="logo image hamburger" viewBox="0 0 9.8 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M0,0.5h9.8 M0,4.6h9.8 M0,8.7h9.8" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+	</div>
+
+</header>
+
+
+
+
+
+<header class="header mobile one">
+
+	<div class="header-bar">
+	</div>
+
+	<div class="sidebar-container sidebar-container-mobile mobile-nav-button">
+	<div class="sidebar sidebar-mobile" style="--sidebar-color: #2A2A2A">
+		<div class="close-button mobile">
+			<svg class="close-button-svg mobile" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 9 9"
+			<style type="text/css">
+				.st0{fill:none;stroke:#F7F1EB;stroke-miterlimit:10;}
+			</style>
+			<defs>
+			</defs>
+			<line class="st0" x1="0.4" y1="8.6" x2="8.6" y2="0.4"/>
+			<line class="st0" x1="0.4" y1="0.4" x2="8.6" y2="8.6"/>
+			</svg>
+		</div>
+		<nav class="nav side text mobile">
+			<a class="item mobile" href="index.html#about">About</a>
+			<a class="item mobile" href="portfolio.html">Work</a>
+			<a class="item mobile" href="contact.html">Contact</a>
+		</br>
+		</br>
+		<a class="item mobile" href="index.html">Home</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="logo container header-logo-container-mobile header-logo-container">
+
+		<svg class="logo image logo-top" viewBox="0 0 6.9 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M6.4.5v8.2H4.6C2.3 8.7.5 6.9.5 4.6S2.3.5 4.6.5v1.8c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+		<svg class="logo image hamburger" viewBox="0 0 9.8 9.2" xmlns="http://www.w3.org/2000/svg">
+			<path class="path" d="M0,0.5h9.8 M0,4.6h9.8 M0,8.7h9.8" fill="none" stroke="#f7f1eb" stroke-linecap="square" stroke-miterlimit="10"/>
+		</svg>
+
+	</div>
+
+</header>
+
+
+<header class="header two header-two">
+
+	<nav class="nav top text">
+		<a class="item" href="index.html#about">About</a>
+		<a class="item" href="portfolio.html">Portfolio</a>
+		<a class="item" href="contact.html">Contact</a>
+	</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<div class="banner">
+
+	<div class="title" data-scroll-speed="-3">
+		FORMAL
+	</div>
+
+	<div class="banner-marker">
+	</div>
+	<div class="banner-marker-two">
+	</div>
+	<div class="banner-background">
+
+		<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In  -->
+		<svg class="banner-background-svg" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 1919.7 513">
+		<style type="text/css">
+			.st0{fill:url(#SVGID_1_);}
+			.st1{fill:url(#SVGID_2_);}
+			.st2{fill:url(#SVGID_3_);}
+			.st3{fill:url(#SVGID_4_);}
+			.st4{fill:url(#SVGID_5_);}
+			.st5{fill:url(#SVGID_6_);}
+			.st6{fill:url(#SVGID_7_);}
+			.st7{fill:url(#SVGID_8_);}
+		</style>
+		<defs>
+		</defs>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="315.4788" y1="652.1793" x2="2114.0691" y2="-452.2183">
+				<stop  offset="0" style="stop-color:#2A2A2A"/>
+				<stop  offset="1" style="stop-color:#565656"/>
+			</linearGradient>
+			<path data-scroll-speed="-1" class="st0 one" d="M1919.7,513H0V0h1919.7V513z"/>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="579.7902" y1="747.0555" x2="2193.5137" y2="-243.8274">
+				<stop  offset="0" style="stop-color:#2A2A2A"/>
+				<stop  offset="1" style="stop-color:#565656"/>
+			</linearGradient>
+			<path data-scroll-speed="-2" class="st1 two" d="M229.7,513c0,0-52.6-267,399.5-267C887,246,906.8,0,906.8,0h1013v513H229.7z"/>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="743.5244" y1="723.9393" x2="2250.6965" y2="-201.5174">
+				<stop  offset="0" style="stop-color:#2A2A2A"/>
+				<stop  offset="1" style="stop-color:#565656"/>
+			</linearGradient>
+			<path data-scroll-speed="-5" class="st2 three" d="M362.1,513c0,0-30.1-165.1,387.3-176.9C1250.3,321.8,1373,0,1373,0h546.7v513H362.1z"/>
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="983.9288" y1="724.069" x2="2302.5444" y2="-85.6073">
+				<stop  offset="0" style="stop-color:#2A2A2A"/>
+				<stop  offset="1" style="stop-color:#565656"/>
+			</linearGradient>
+			<path data-scroll-speed="-10" class="st3" d="M752.3,513c0,0,314.4-266.2,713.2-266.2c453.2,0,454.3-191.8,454.3-191.8v283.3V513H752.3z"/>
+		</g>
+		</svg>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="secondary-nav" style="--topbar-color: #2A2A2A;">
+
+
+<!--
+<a href="portfolio.html#tab1" class="item text">Back</a>
+-->
+
+	<!--
+	<ul class="nav nav-tabs items-container">
+		<li class="active">
+			<a href="portfolio.html#tab1" class="item secondary-nav-item text print-close-button">Featured</a>
+		</li>
+	</br>
+		<li>
+			<a href="portfolio.html#tab2" class="item secondary-nav-item text print-close-button">Branding</a>
+		</li>
+		<li>
+			<a href="portfolio.html#tab3" class="item secondary-nav-item nav-item-print text">Print</a>
+		</li>
+		<li>
+			<a href="portfolio.html#tab4" class="item secondary-nav-item text print-close-button">Interaction</a>
+		</li>
+	</ul>
+-->
+</div>
+
+
+
+
+
+
+<div class="project-content formal">
+
+	<div class="text-container">
+
+		<div class="info item">
+
+			<div class="item_">
+				<div class="title">
+					Category
+				</div>
+
+				<div class="body">
+					Branding
+				</div>
+			</div>
+
+			<div class="item_">
+				<div class="title">
+					Date
+				</div>
+
+				<div class="body">
+					December 2018
+				</div>
+			</div>
+
+			<div class="item_">
+				<div class="title">
+					Tools
+				</div>
+
+				<div class="body">
+					Photography, Illustrator, Photoshop
+				</div>
+			</div>
+
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				The Project
+			</div>
+			<div class="body">
+				As branding cordinator of the DSA (Design Students Association), I was assigned to brand YSDN's annual formal event. After being given the theme of 'CMYK', I was up to the task of developing a cohesive visual brand by exploring possibilties of communicating 'CMYK' in physical means.
+			</div>
+			<div class="body">
+				This project consisted of a logo, posters, ticket designs, photo props and more.
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="image-container one opener">
+		<img data-scroll-speed="-5" src="img/projects/formal/main.jpg" class="image one"/>
+	</div>
+
+
+	<div class="text-container">
+
+		<div class="block item">
+			<div class="title">
+				Fruits!
+			</div>
+			<div class="body">
+				I decided to play around with different fruits, considering their natural association with bright, CMYK-like colours.
+			</div>
+			<div class="body">
+				Although I experimented with many different fruits and colours, I ended up using only lemons as they were the most transferrable, visually.
+			</div>
+		</div>
+
+	</div>
+
+	<!-- <div class="text-container secondary row" style="--secondary-color: #9CD2C7;">
+
+
+		<div class="images-container">
+			<img src="img/projects/simplesave/3.jpg" class="image"/>
+			<img src="img/projects/simplesave/2.jpg" class="image"/>
+		</div>
+
+		<div class="block item">
+			<div class="title">
+				Money can be easy again!
+			</div>
+			<div class="body">
+				The goal of Simple Save was to create a banking app that is simple, straightforward, and appeals to someone with minimal banking needs and knowledge.
+			</div>
+			<div class="body">
+				In addition to the features you need, there are unique tools designed to aid users manage and budget their money easier.
+			</div>
+		</div>
+
+	</div>-->
+
+	<div class="text-container secondary list" style="--secondary-color: #2A2A2A;">
+
+		<div class="secondary-container">
+
+			<div class="row">
+				<div class="image-container one">
+					<img src="img/projects/formal/poster1.jpg" class="image one"/>
+				</div>
+
+				<div class="block item">
+					<div class="title">
+						Main Poster
+					</div>
+					<div class="body">
+						This poster was used to promote the event, through print and on online / social media.
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="image-container">
+					<img src="img/projects/formal/poster2.jpg" class="image two"/>
+				</div>
+
+				<div class="block item">
+					<div class="title">
+						Event Poster [Wide Format]
+					</div>
+					<div class="body">
+						Measuring 66"x44", this wide format poster was used at the event, hung up on the wall to bring the brand together at the venue.
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="image-container">
+					<img src="img/projects/formal/ticket.jpg" class="image three"/>
+				</div>
+
+				<div class="block item">
+					<div class="title">
+						Tickets
+					</div>
+					<div class="body">
+						Tickets, tickets tickets.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<div class="text-container secondary row" style="--secondary-color: #4f4f4f;">
+		<div class="headline single">
+			The Process
+		</div>
+	</div>
+
+	<div class="text-container subhead">
+		Visual Development
+	</div>
+
+	<div class="text-container grid">
+
+		<div class="width-container">
+
+			<div class="block item one">
+				<img src="img/projects/formal/small/1.jpg" class="one"/>
+			</div>
+
+			<div class="block item two">
+				<img src="img/projects/formal/small/2.jpg" class="two"/>
+			</div>
+
+			</div>
+
+		<div class="width-container">
+
+			<div class="block item three">
+				<img src="img/projects/formal/small/3.jpg" class="three"/>
+			</div>
+
+			<div class="block item four">
+				<img src="img/projects/formal/small/4.jpg" class="four"/>
+			</div>
+
+		</div>
+
+		<div class="width-container">
+
+			<div class="block item five">
+				<img src="img/projects/formal/small/5.jpg" class="five"/>
+			</div>
+
+			<div class="block item six">
+				<img src="img/projects/formal/small/6.jpg" class="six"/>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="text-container subhead">
+		Logo Development
+	</div>
+
+	<div class="text-container grid">
+
+		<div class="width-container">
+
+			<div class="block item ten">
+				<img src="img/projects/formal/small/15.jpg"/>
+			</div>
+
+			<div class="block item eleven">
+				<img src="img/projects/formal/small/16.jpg"/>
+			</div>
+
+		</div>
+
+		<div class="width-container">
+
+			<div class="block item seven">
+				<img src="img/projects/formal/small/7.jpg" class="seven"/>
+			</div>
+
+			<div class="block item nine">
+				<img src="img/projects/formal/small/9.jpg" class="nine"/>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="text-container subhead">
+		Poster Development
+	</div>
+
+	<div class="text-container grid">
+
+		<div class="width-container">
+
+			<div class="block item twelve">
+				<img src="img/projects/formal/small/10.jpg"/>
+			</div>
+
+			<div class="block item thirteen">
+				<img src="img/projects/formal/small/11.jpg"/>
+			</div>
+
+		</div>
+
+		<div class="width-container">
+
+			<div class="block item fourteen">
+				<img src="img/projects/formal/small/12.jpg"/>
+			</div>
+
+			<div class="block item fifteen">
+				<img src="img/projects/formal/small/13.jpg"/>
+			</div>
+
+			<div class="block item sixteen">
+				<img src="img/projects/formal/small/14.jpg"/>
+			</div>
+
+		</div>
+
+	</div>
+
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="return-button-container">
+	<a href="portfolio.html" class="return-button">
+		Return to portfoio
+	</a>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".secondary-nav").addClass("change");
+    } else {
+        $(".secondary-nav").removeClass("change");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".secondary-nav-item").addClass("change");
+				$(".secondary-nav-item").removeClass("unchange");
+    } else {
+        $(".secondary-nav-item").removeClass("change");
+				$(".secondary-nav-item").addClass("unchange");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".stabs-nav li.tab-active").addClass("change");
+    } else {
+        $(".stabs-nav li.tab-active").removeClass("change");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header.desktop.portfolio .logo.container").addClass("change");
+    } else {
+        $(".header.desktop.portfolio .logo.container").removeClass("change");
+    }
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".banner-marker-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header.desktop.portfolio .logo.image").addClass("change");
+    } else {
+        $(".header.desktop.portfolio .logo.image").removeClass("change");
+    }
+});
+
+
+
+
+// Show the first tab by default
+$('.tabs-stage div').hide();
+$('.tabs-stage div:first').show();
+$('.tabs-nav li:first').addClass('tab-active');
+
+// Change tab class and display content
+$('.tabs-nav a').on('click', function(event){
+  event.preventDefault();
+  $('.tabs-nav li').removeClass('tab-active');
+  $(this).parent().addClass('tab-active');
+  $('.tabs-stage div').hide();
+  $($(this).attr('href')).show();
+});
+
+// print tab
+$('.nav-item-print').on('click', function(event){
+  event.preventDefault();
+  $('.grid-container').removeClass('display-none');
+	$('.grid-container').removeClass('display-flex');
+});
+
+$('.print-close-button').on('click', function(event){
+  event.preventDefault();
+  $('.grid-container').addClass('display-none');
+	$('.grid-container').removeClass('display-flex');
+});
+
+
+
+
+
+
+//mobile only
+
+$(".mobile-nav-button").on("click", function() {
+
+    $(".sidebar-container").toggleClass("extend");
+
+		$(".sidebar-mobile").toggleClass("extend");
+
+		$(".header-logo-container-mobile").toggleClass("extend");
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+
+
+   setHeight($('.parallax'), $('.about'));
+
+    $(window).on(resize, function() {
+      setHeight($('.parallax'), $('.about'));
+    });
+
+});
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".header-two");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".logo-top").addClass("logo-top-animation");
+				$(".hamburger").addClass("hamburgerhello");
+    } else {
+        $(".logo-top").removeClass("logo-top-animation");
+				$(".hamburger").removeClass("hamburgerhello");
+    }
+});
+
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $(".profile-image");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+        $(".header-bar").addClass("present");
+    } else {
+				$(".header-bar").removeClass("present");
+    }
+});
+
+
+
+$(window).scroll(function() {
+
+    //After scrolling 100px from the top...
+    if ( $(window).scrollTop() >= 1 ) {
+        $('.scroll').css('opacity', '0');
+				$('.scroll').css('margin-top', '100px');
+
+    //Otherwise remove inline styles and thereby revert to original stying
+    } else {
+
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+$.fn.moveIt = function(){
+   var $window = $(window);
+   var instances = [];
+$(this).each(function(){
+   instances.push(new moveItItem($(this)));
+});
+window.onscroll = function(){
+   var scrollTop = $window.scrollTop();
+  instances.forEach(function(inst){
+     inst.update(scrollTop);
+     });
+   }
+}
+
+var moveItItem = function(el){
+   this.el = $(el);
+   this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+   this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+
+// Initialization
+$(function(){
+   $('[data-scroll-speed]').moveIt();
+});
+
+
+
+
+
+
+// Open the Modal
+		function openModal() {
+			document.getElementById('myModal').style.display = "block";
+		}
+		// Close the Modal
+		function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+		}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			captionText.innerHTML = dots[slideIndex - 1].alt;
+		}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+
+
+</body>
+
+<!--
+<script>
+
+	var rellax = new Rellax('.rellax', {
+	callback: function(position) {
+	}
+	});
+
+</script>
+-->
+
+
+
+
+
+
+
+
+
+
+</html>

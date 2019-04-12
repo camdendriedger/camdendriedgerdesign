@@ -1,0 +1,999 @@
+@charset "UTF-8";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+
+/*  FONTS */
+
+@font-face {
+font-family: metropolis_thin;
+src: url(../fonts/metropolis_thin.otf);
+}
+
+@font-face {
+font-family: metropolis_extralight;
+src: url(../fonts/metropolis_extralight.otf);
+}
+
+@font-face {
+font-family: metropolis_light;
+src: url(../fonts/metropolis_light.otf);
+}
+
+@font-face {
+font-family: metropolis_regular;
+src: url(../fonts/metropolis_regular.otf);
+}
+
+@font-face {
+font-family: metropolis_medium;
+src: url(../fonts/metropolis_medium.otf);
+}
+
+@font-face {
+font-family: metropolis_semibold;
+src: url(../fonts/metropolis_semibold.otf);
+}
+
+@font-face {
+font-family: metropolis_bold;
+src: url(../fonts/metropolis_bold.otf);
+}
+
+
+.menu-button-link {
+  display: none;
+}
+
+.socialmedia-mobile {
+  display: none;
+}
+
+.splash {
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  position: relative;
+  display: flex;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("../img/splash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* general tags */
+
+.logo {
+  color: #ffffff;
+  font-family: 'metropolis_regular';
+}
+
+.orangebox {
+  transition: all .3s ease;
+}
+
+.orangebox:hover {
+  background-color: #e58769;
+}
+
+.transition {
+  transition: all .3s ease;
+}
+
+.transition-slow {
+  transition: all .6s ease;
+}
+
+.box {
+  border: 2px solid #333;
+  margin-bottom: 25px;
+  min-height: 35px;
+}
+
+.box.last {
+  margin-bottom: 0;
+}
+
+.introbox.box {
+  width: 200px;
+}
+
+#box-about {
+  margin-bottom: 0;
+}
+
+.mainbox.box {
+  padding: 25px;
+}
+
+.flex-center-row {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-center.about {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-left-row {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+}
+
+.flex-center-center-row {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.flex-center-center-column {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.column2 {
+  width: 50%;
+  text-align: left;
+  margin-right: 25px;
+  vertical-align: top;
+  height: 100%;
+  display: table-cell;
+}
+
+.column2:last-child {
+  margin-right: 0;
+}
+
+
+/* general text */
+
+.bodytext {
+  font-family: 'metropolis_regular';
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.bodytext:last-child {
+  margin-bottom: 0;
+}
+
+.headlinetext {
+  font-family: 'metropolis_bold';
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.titletext-1 {
+  font-family: 'metropolis_light';
+  color: #333;
+  font-size: 20px;
+}
+
+.titletext-2 {
+  font-family: 'metropolis_semibold';
+  color: #333;
+  font-size: 20px;
+}
+
+.songtext {
+  display: flex;
+  max-width: 70%;
+  font-family: 'metropolis_regular';
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 0 12px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+}
+
+.songtext-time {
+  display: flex;
+  font-family: 'metropolis_regular';
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 0 12px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  position: absolute;
+  right: 70px;
+}
+
+
+
+
+
+
+
+
+
+.splash .logo {
+  font-size: 100px;
+}
+
+.arrow {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.arrow svg {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  fill: none;
+  stroke: #fff;
+  stroke-width: 5px;
+}
+
+
+
+
+.content {
+  width: 100%;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+.content .image-container {
+  width: 30%;
+  height: 100vh;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.content .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.content .image.one {
+  background-image: url("../img/side/1.jpg");
+  background-position: 75%;
+}
+
+.content .image.two {
+  background-image: url("../img/side/2.jpg");
+}
+
+.content .image.three {
+  background-image: url("../img/side/3.jpg");
+  background-position: 60%;
+}
+
+.content .main {
+  width: 70%;
+}
+
+
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 50px;
+  background-color: #333;
+  padding: 12px;
+  z-index: 1;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+.header .logo {
+  height: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: 6px;
+
+  position: relative;
+  z-index: 101;
+}
+
+
+.socialmedia-container {
+  height: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  margin-right: 12px;
+  position: relative;
+  z-index: 50;
+  /*
+  overflow: hidden;
+  */
+}
+
+.socialmedia {
+  height: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  position: absolute;
+  right: 100px;
+  opacity: 0;
+}
+
+.header .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  height: 100%;
+  width: 80px;
+  z-index: 100;
+}
+
+.header:hover .socialmedia {
+  right: -100px;
+  opacity: 1;
+}
+
+.socialmedia .icon, .socialmedia .link {
+  position: relative;
+  height: 100%;
+  margin-right: 6px;
+  z-index: 50;
+}
+
+.socialmedia .icon:last-child {
+  margin-right: 0;
+}
+
+.header .nav {
+  color: #fff;
+  font-family: 'metropolis_regular';
+  font-size: 15px;
+  height:100%;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  padding: 12px;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: center;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.header .item {
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+  margin-right: 12px;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  text-align: right;
+  vertical-align: middle;
+  z-index: 50;
+  transition: all .3s ease;
+  padding-right: 6px;
+  padding-left: 6px;
+  border: 1px solid #333;
+}
+
+.header .item:hover {
+  border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+.sections-container {
+  padding: 25px;
+  width: 100%;
+}
+
+/* about */
+
+.about {
+  margin-top: 25px;
+}
+
+
+
+/* music */
+
+.song-container {
+  width: 100%;
+  border: 2px solid #333;
+  padding: 12px;
+  margin-bottom: 12px;
+  transition: all .3s ease;
+}
+
+.song-container:last-child {
+  margin-bottom: 0;
+}
+
+.song-container.last {
+  margin-bottom: 25px;
+}
+
+.song-container:hover {
+  background-color: #e58769;
+}
+
+.play-container {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
+
+.svg-triangle {
+  width: 50%;
+  height: 50%;
+  margin-left: 4px;
+  fill: #333;
+}
+
+.svg-path {
+  stroke-width: 1px;
+  stroke: #333;
+}
+
+.play-container .pause {
+  font-family: 'metropolis_semibold';
+  color: #333;
+  font-size: 20px;
+  position: absolute;
+  line-height: 0;
+  margin-top: 1px;
+  display: none;
+}
+
+.play-container:hover {
+  background-color: #333;
+}
+
+.play-container:hover .svg-triangle {
+  fill: #fff
+}
+
+
+
+
+
+/* shows */
+
+.calendar {
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.calendar .item {
+  width: 13%;
+  /*
+  padding-top: 7.1%;
+  */
+  border: 2px solid #333;
+  margin-right: 1.5%;
+  margin-bottom: 1.5%;
+  padding: 12px 12px 8% 12px;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: relative;
+  transition: all .3s ease;
+}
+
+.calendar .item:hover {
+  background-color: #e58769;
+}
+
+.calendar .item.last {
+  margin-right: 0;
+}
+
+.calendar .item.bottom {
+  margin-bottom: 25px;
+}
+
+.calendar .item.bottom2 {
+  margin-bottom: 0;
+}
+
+.calendar .date {
+  font-family: 'metropolis_regular';
+  color: #333;
+  font-size: 20px;
+}
+
+.calendar .dot {
+  font-family: 'metropolis_regular';
+  font-size: 20px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #fff;
+  -webkit-text-stroke: 2px #333;
+  cursor: default;
+}
+
+.calendar .dot.active {
+  color: #333
+}
+
+
+
+
+/*
+.header {
+
+
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+
+
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+*/
+
+
+
+  /* GLITCH EFFECT */
+  .glitch {
+    position: relative;
+  }
+
+  .glitch:after {
+    animation: glitch-animation 2s infinite linear alternate-reverse;
+    /* background: black; */
+    clip: rect( 0, 900px, 0, 0 );
+    color: white;
+    content: attr( data-text );
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: -3px 0 #4e3231;
+    top: 0;
+  }
+
+  .glitch:before {
+    animation: glitch-animation-2 3s infinite linear alternate-reverse;
+    /* background: black; */
+    clip: rect( 0, 900px, 0, 0 );
+    color: white;
+    content: attr( data-text );
+    left: -2px;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: 3px 0 #486366;
+    top: 0;
+  }
+
+  /* Expanded Animations */
+  @keyframes glitch-animation {
+    0% {
+      clip: rect(42px, 9999px, 44px, 0);
+    }
+    5% {
+      clip: rect(12px, 9999px, 59px, 0);
+    }
+    10% {
+      clip: rect(48px, 9999px, 29px, 0);
+    }
+    15.0% {
+      clip: rect(42px, 9999px, 73px, 0);
+    }
+    20% {
+      clip: rect(63px, 9999px, 27px, 0);
+    }
+    25% {
+      clip: rect(34px, 9999px, 55px, 0);
+    }
+    30.0% {
+      clip: rect(86px, 9999px, 73px, 0);
+    }
+    35% {
+      clip: rect(20px, 9999px, 20px, 0);
+    }
+    40% {
+      clip: rect(26px, 9999px, 60px, 0);
+    }
+    45% {
+      clip: rect(25px, 9999px, 66px, 0);
+    }
+    50% {
+      clip: rect(57px, 9999px, 98px, 0);
+    }
+    55.0% {
+      clip: rect(5px, 9999px, 46px, 0);
+    }
+    60.0% {
+      clip: rect(82px, 9999px, 31px, 0);
+    }
+    65% {
+      clip: rect(54px, 9999px, 27px, 0);
+    }
+    70% {
+      clip: rect(28px, 9999px, 99px, 0);
+    }
+    75% {
+      clip: rect(45px, 9999px, 69px, 0);
+    }
+    80% {
+      clip: rect(23px, 9999px, 85px, 0);
+    }
+    85.0% {
+      clip: rect(54px, 9999px, 84px, 0);
+    }
+    90% {
+      clip: rect(45px, 9999px, 47px, 0);
+    }
+    95% {
+      clip: rect(37px, 9999px, 20px, 0);
+    }
+    100% {
+      clip: rect(4px, 9999px, 91px, 0);
+    }
+  }
+
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(65px, 9999px, 100px, 0);
+    }
+    5% {
+      clip: rect(52px, 9999px, 74px, 0);
+    }
+    10% {
+      clip: rect(79px, 9999px, 85px, 0);
+    }
+    15.0% {
+      clip: rect(75px, 9999px, 5px, 0);
+    }
+    20% {
+      clip: rect(67px, 9999px, 61px, 0);
+    }
+    25% {
+      clip: rect(14px, 9999px, 79px, 0);
+    }
+    30.0% {
+      clip: rect(1px, 9999px, 66px, 0);
+    }
+    35% {
+      clip: rect(86px, 9999px, 30px, 0);
+    }
+    40% {
+      clip: rect(23px, 9999px, 98px, 0);
+    }
+    45% {
+      clip: rect(85px, 9999px, 72px, 0);
+    }
+    50% {
+      clip: rect(71px, 9999px, 75px, 0);
+    }
+    55.0% {
+      clip: rect(2px, 9999px, 48px, 0);
+    }
+    60.0% {
+      clip: rect(30px, 9999px, 16px, 0);
+    }
+    65% {
+      clip: rect(59px, 9999px, 50px, 0);
+    }
+    70% {
+      clip: rect(41px, 9999px, 62px, 0);
+    }
+    75% {
+      clip: rect(2px, 9999px, 82px, 0);
+    }
+    80% {
+      clip: rect(47px, 9999px, 73px, 0);
+    }
+    85.0% {
+      clip: rect(3px, 9999px, 27px, 0);
+    }
+    90% {
+      clip: rect(26px, 9999px, 55px, 0);
+    }
+    95% {
+      clip: rect(42px, 9999px, 97px, 0);
+    }
+    100% {
+      clip: rect(38px, 9999px, 49px, 0);
+    }
+  }
+
+
+
+
+/* media query - small desktop / tablet */
+
+  @media screen and (max-width: 1024px) and (min-width: 768px){
+
+    .column2 {
+      width: 100%;
+      text-align: left;
+
+      vertical-align: top;
+      height: 100%;
+    }
+
+    .flex-center.about {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .bodytext:last-child {
+      margin-bottom: 14px;
+    }
+
+    .menu-button-link {
+      display: none;
+    }
+
+    .socialmedia-mobile {
+      display: none;
+    }
+
+  }
+
+
+
+
+
+/* media query - phone */
+
+  @media screen and (max-width: 768px) {
+
+    .songtext-time {
+      display: none;
+    }
+
+    .content .image-container {
+      width: 100%;
+      height: 150px;
+
+      position: fixed;
+      position: -webkit-sticky;
+      top: 50px;
+      z-index: 50;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #333;
+      padding: 12px;
+      z-index: 1;
+
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-direction: row;
+    }
+
+
+    .column2 {
+      width: 100%;
+      text-align: left;
+
+      vertical-align: top;
+      height: 100%;
+    }
+
+    .flex-center.about {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .bodytext:last-child {
+      margin-bottom: 14px;
+    }
+
+    .content .main {
+      width: 100%;
+    }
+
+    .dot {
+      display: none;
+    }
+
+    .calendar .date {
+      font-size: 15px;
+    }
+
+
+
+    .socialmedia {
+      display: none;
+    }
+
+    .socialmedia-mobile {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      z-index: 100;
+      height: 60px;
+      background-color: #333;
+      padding: 12px;
+      text-align: right;
+      justify-content: right;
+      align-items: right;
+    }
+
+    .socialmedia-mobile .icon, .socialmedia-mobile .link {
+      position: relative;
+      height: 100%;
+      margin-right: 6px;
+      z-index: 50;
+      width: auto;
+    }
+
+    .socialmedia-mobile .icon:last-child {
+      margin-right: 0;
+    }
+
+    #shows {
+      margin-bottom: 50px;
+    }
+
+
+  }
